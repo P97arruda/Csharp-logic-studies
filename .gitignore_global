@@ -1,0 +1,35 @@
+# ======== GLOBAL GITIGNORE ========
+# Visual Studio
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+Debug/
+Release/
+out/
+
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs and temp files
+*.log
+*.tmp
+*.cache
+*.db
+*.db-wal
+*.db-shm
+
+# Recycle
+$RECYCLE.BIN/
+
+# IDEs
+.idea/
+*.iml
