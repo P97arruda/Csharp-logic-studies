@@ -2,19 +2,20 @@
 {
     internal class Program
     {
-        /* 1. Crie um aplicação que peça o nome e apelido e responda com "Olá, Nome e Apelido. Como Vai?" */
-        
+        /* 1. Create an application that asks for the user's first and last name and responds with "Hello, what's your first and last name end 
+         * How are you?" */
+
         static void Main(string[] args)
         {
-            string nome, apelido;
+            string name, lastName;
 
-            Console.Write("Digite seu nome: ");
-            nome = Console.ReadLine();
+            Console.Write("Enter your name: ");
+            name = Console.ReadLine();
 
-            Console.Write("Digite seu apelido: ");
-            apelido = Console.ReadLine();
+            Console.Write("Enter your Last Name: ");
+            lastName = Console.ReadLine();
 
-            Console.WriteLine($"Ola, {nome} {apelido} Como vai?");
+            Console.WriteLine($"Hello, {name} {lastName} How are you?");
 
 
         }

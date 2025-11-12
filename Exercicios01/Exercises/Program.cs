@@ -2,17 +2,17 @@
 {
     internal class Program
     {
-        /* 2. Crie um programa que receba um valor em euros e converta-o a dólares. Use o cambio do dia hoje.*/
+        /* 2. Create a programme that receives a value in euros and convert it into dollars. Use taday´s exchange rate .*/
         static void Main(string[] args)
         {
-            double euros, dolares;
+            double euros, dollars;
 
-            Console.Write("Insira o valor em euros: ");
+            Console.Write("enter the value: ");
             euros = Convert.ToDouble(Console.ReadLine());
 
-            dolares = euros * 1.08;
+            dollars = euros * 1.08;
 
-            Console.WriteLine($"{euros} euros = {Math.Round(dolares, 2)} dólares");
+            Console.WriteLine($"{euros} euros = {Math.Round(dollars, 2)} dollars");
         }   
     }
 }
