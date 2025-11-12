@@ -1,4 +1,4 @@
-﻿namespace Saudacao
+﻿namespace SomaProduto
 {
     internal class Program
     {
