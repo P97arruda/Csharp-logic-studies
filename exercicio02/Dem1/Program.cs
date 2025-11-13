@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            bool A = true, B = true, C = false, D = false;
+
+            Console.WriteLine(A || B || C || D);
+            Console.WriteLine(A && B && C && D);
+            Console.WriteLine(!C && !D);
+            Console.WriteLine(!((A && B) || (B && !C)) || !(C && D));
+            Console.WriteLine(!(!((A && !D) && (B || C))));
         }
     }
 }
