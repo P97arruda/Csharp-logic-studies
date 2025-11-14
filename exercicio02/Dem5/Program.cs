@@ -1,46 +1,94 @@
-﻿using System.ComponentModel.Design;
-
-namespace Dem5
+﻿
+namespace Demo1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int num1, num2, num3;
+            //Programa para calcular compra de frutas - VERSÃO INICIANTE
 
-            Console.Write("Insita o primeiro número: ");
-            num1 = Convert.ToInt32(Console.ReadLine());
+            //Variáveis para as quantidades
+            double kgMorangos;
+            double kgMacas;
 
-            Console.Write("Insita o segundo número: ");
-            num2 = Convert.ToInt32(Console.ReadLine());
+            //Variáveis para os preços
+            double precoMorangos;
+            double precoMacas;
 
-            Console.Write("Insita o terceiro número: ");
-            num3 = Convert.ToInt32(Console.ReadLine());
+            //Variáveis para os totais
+            double totalKg;
+            double valorBruto;
+            double valorFinal;
 
-            if (num1 < num2)
+            //Variável para saber se tem desconto
+            bool temDesconto;
+
+            //Pedir quantidade de morangos
+            Console.Write("Quantos quilos de morango? ");
+            kgMorangos = Convert.ToDouble(Console.ReadLine());
+
+            //Pedir quantidade de maçãs
+            Console.Write("Quantos quilos de maçã? ");
+            kgMacas = Convert.ToDouble(Console.ReadLine());
+
+            //CALCULAR PREÇO DOS MORANGOS
+            //Se comprar até 5 kg
+            if (kgMorangos <= 5)
             {
-                if (num1 < num3)
-                {
-                  Console.WriteLine($"O menor némero é: {num1}");
-                }
-                else
-                {
-                  Console.WriteLine($"O menor número é: {num3}");
-                }
-
+                precoMorangos = kgMorangos * 2.50;
             }
+            //Se comprar mais de 5 kg
             else
             {
-                if ( num2 < num3)
-                {
-                  Console.WriteLine($"O menor numero é {num2}");
-                }
-                else
-                {
-                    Console.WriteLine($"O menor numero é {num3}");
-                }
+                precoMorangos = kgMorangos * 2.20;
             }
-            
+
+            //CALCULAR PREÇO DAS MAÇÃS
+            //Se comprar até 5 kg
+            if (kgMacas <= 5)
+            {
+                precoMacas = kgMacas * 1.80;
+            }
+            //Se comprar mais de 5 kg
+            else
+            {
+                precoMacas = kgMacas * 1.50;
+            }
+
+            //SOMAR TUDO
+            totalKg = kgMorangos + kgMacas;
+            valorBruto = precoMorangos + precoMacas;
+
+            //VERIFICAR SE TEM DESCONTO
+            //Começar assumindo que NÃO tem desconto
+            temDesconto = false;
+
+            //Verificar se tem mais de 8 kg no total
+            if (totalKg > 8)
+            {
+                temDesconto = true;
+            }
+
+            //Verificar se o valor passa de 25 euros
+            if (valorBruto > 25)
+            {
+                temDesconto = true;
+            }
+
+            //CALCULAR VALOR FINAL
+            //Se tem desconto
+            if (temDesconto == true)
+            {
+                valorFinal = valorBruto * 0.90;
+            }
+            //Se não tem desconto
+            else
+            {
+                valorFinal = valorBruto;
+            }
+
+            //MOSTRAR RESULTADO
+            Console.WriteLine("Valor a pagar: " + Math.Round(valorFinal, 2) + " euros");
         }
     }
 }
