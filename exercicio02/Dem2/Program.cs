@@ -4,22 +4,22 @@
     {
         static void Main(string[] args)
         {
-            int numero;
+            int num;
 
             Console.Write("Ensira o numero inteiro: ");
-            numero = Convert.ToInt32(Console.ReadLine());
+            num = Convert.ToInt32(Console.ReadLine());
 
-            if (numero > 0)
+            if (num > 0)
             {
-                Console.WriteLine($" {numero} é Positivo!");
+                Console.WriteLine($" {num} é Positivo!");
             }
-            else if (numero < 0) 
+            else if (num < 0) 
             {
-                Console.WriteLine($" {numero} é negativo!");
+                Console.WriteLine($" {num} é negativo!");
             }
             else
             {
-                Console.WriteLine($" {numero} é neutro!");
+                Console.WriteLine($" {num} é neutro!");
             }
         }
     }
