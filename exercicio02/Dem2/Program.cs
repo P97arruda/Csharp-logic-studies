@@ -11,15 +11,15 @@
 
             if (num > 0)
             {
-                Console.WriteLine($" {num} é Positivo!");
+                Console.WriteLine($" {num} é Positivo.");
             }
             else if (num < 0) 
             {
-                Console.WriteLine($" {num} é negativo!");
+                Console.WriteLine($" {num} é negativo.");
             }
             else
             {
-                Console.WriteLine($" {num} é neutro!");
+                Console.WriteLine($" {num} é neutro.");
             }
         }
     }
