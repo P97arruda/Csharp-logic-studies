@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dem6", "Dem6\Dem6.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dem4", "Dem4\Dem4.csproj", "{AC0B7128-854B-4404-BBD5-589387A9A325}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dem8", "Dem8\Dem8.csproj", "{FA2992F0-9009-4FE0-9EAC-DF31595310C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{AC0B7128-854B-4404-BBD5-589387A9A325}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC0B7128-854B-4404-BBD5-589387A9A325}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC0B7128-854B-4404-BBD5-589387A9A325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA2992F0-9009-4FE0-9EAC-DF31595310C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2992F0-9009-4FE0-9EAC-DF31595310C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA2992F0-9009-4FE0-9EAC-DF31595310C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA2992F0-9009-4FE0-9EAC-DF31595310C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

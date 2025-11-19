@@ -15,7 +15,7 @@
             }
             else
             {
-                Console.WriteLine("O número é IMPAR");
+                Console.WriteLine("O número é Impar");
             }
         }
     }
