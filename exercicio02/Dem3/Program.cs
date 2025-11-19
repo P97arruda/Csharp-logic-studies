@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+            //Escreva um programa que peça dois numero ao utilizador e diga qual é o maior.
+
             int num1, num2;
 
             Console.Write("Escreva o primeiro numero: ");
@@ -12,8 +14,10 @@
             Console.Write("Escreva o segundo numero: ");
             num2 = Convert.ToInt32(Console.ReadLine());
 
+            Console.Clear();
+
             if (num1 > num2) {
-                Console.WriteLine($"O Primeiro numero é o maior! {num1} ");
+                Console.WriteLine($"O primeiro numero é o maior! {num1} ");
             }
             else
             {
