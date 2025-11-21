@@ -41,7 +41,7 @@
                 Console.WriteLine("Codigo invalido");
             }
 
-            Console.WriteLine($"Preço total: {Math.Round(total, 2)}");
+            Console.WriteLine($"Preço total {Math.Round(total, 2)}");
         }
     }
 }
