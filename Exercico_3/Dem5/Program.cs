@@ -4,42 +4,38 @@
     {
         static void Main(string[] args)
         {
-            double precoCusto, precoVenda, margem = 0;
+            double precoCusto = 0;
                
-            int codigoCategoria;
+            int codigo;
 
             Console.Write("Preco de custo do produto: ");
             precoCusto = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Codigo do produto 1 a 6: ");
-            codigoCategoria = Convert.ToInt32(Console.ReadLine());
+            codigo = Convert.ToInt32(Console.ReadLine());
 
-            switch (codigoCategoria)
-            {
-                case 1:
-                case 2:
-                    margem = 0.80;
-                    break;
+            //switch (codigo)
+            //{
+            //    case 1:
+            //    case 2:
+            //        Console.WriteLine($"Para Lacticinios e carnes o valor e de {precoCusto + (precoCusto * 0.8)}");
+            //        break;
 
-                case 3:
-                case 4:
-                    margem = 1.00;
-                    break;
+            //    case 3:
+            //    case 4:
+            //        Console.WriteLine($"Para Peixes e Alves o valor e de {precoCusto * 2}");
+            //        break;
 
-                case 5:
-                case 6:
-                    margem = 0.90;
-                    break;
-                default:
-                    Console.WriteLine("codigo invalido!");
-                    break;
-            }
+            //    case 5:
+            //    case 6:
+            //        Console.WriteLine($"Para Ovos e Doces o valor e de  {precoCusto + (precoCusto * 0.9)}");
+            //        break;
+            //    default:
+            //        Console.WriteLine("codigo invalido!");
+            //        break;
+            //}
 
-            precoVenda = precoCusto + (precoCusto * margem);
-
-
-            Console.WriteLine($"Margem de lucro: {margem * 100}%");
-            Console.WriteLine($"Preço de venda: {Math.Round(precoVenda, 2)}€");
+            
 
 
 

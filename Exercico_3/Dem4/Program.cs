@@ -6,73 +6,60 @@ namespace Dem4
     {
         static void Main(string[] args)
         {
-            double preco, final, parcela;
-            int codigo, prestacoes = 0;
+            double preco;
+            int codigo, prestacoes;
 
-            Console.Write("Preco do produto: ");
+            Console.Write("Insira o preco: ");
             preco = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write(" Codigo pagamento: (1-4) ");
+            Console.Write("Insira o codigo: ");
             codigo = Convert.ToInt32(Console.ReadLine());
 
 
             switch (codigo) 
             {
                 case 1:
-                    final = preco * 0.70;
-                    prestacoes = 1;
+                    Console.WriteLine($"Valor a pagar de {preco - preco * 0.3}");
                     break;
                 
-                case 2:
-                    final = preco * 0.80;
-                    prestacoes = 2;
+               case 2:
+                    Console.WriteLine($"Duas prestacoes de {(preco - (preco * 0.2)) /2}");
                     break;
 
-                case 3:
-                    final = preco * 0.90;
-                    prestacoes = 3;
+               case 3:
+                    Console.WriteLine($"Tres prestacoes de {(preco - (preco * 0.1)) / 3}");
                     break;
 
                 case 4:
-                    final = preco;
-                    Console.Write("Outras oopcoes 4 e 6 prestacoes: ");
+                    Console.WriteLine("Quantas prestacoes sao? 4, 5 ou 6");
                     prestacoes = Convert.ToInt32(Console.ReadLine());
 
-                    if(prestacoes == 4)
+                    switch (prestacoes)
                     {
-                        prestacoes = prestacoes; 
-                    }
-                    else if(prestacoes == 5)
-                    {
-                        prestacoes = prestacoes;
-                    }
-                    else if(prestacoes == 6)
-                    {
-                        prestacoes = prestacoes;
-                    }
-                    else
-                    {
-                        prestacoes = 6;
-                        Console.WriteLine("Numero invalido! Usando 6 prestacoes");
-                    }
-                   break;
+                        case 4:
+                            Console.WriteLine($"Quatro prestacoes de {preco / 4}");
+                            break;
 
+                        case 5:
+                            Console.WriteLine($"Cinco prestacoes de {preco / 5}");
+                            break;
 
-                default:
-                    final = preco;
-                    prestacoes = 1;
-                    Console.WriteLine("Codigo invalido");
+                        case 6:
+                            Console.WriteLine($"Seis prestacoes de {preco / 6}");
+                            break;
+
+                        default:
+                            Console.WriteLine("So pode escolher 4, 5 ou 6 prestacoes!");
+                            break;
+                    }
                     break;
 
+                default:
+                    Console.WriteLine("Codigo de pagamento invalido");
+                    break;
+
+
             }
-
-            parcela = final / prestacoes;
-
-            Console.WriteLine($"Preco final: {final}");
-            Console.WriteLine($"Prestacoes: {prestacoes}");
-            Console.WriteLine($"Valor por prestacoes: {parcela}");
-
-                
         }
     }
 }

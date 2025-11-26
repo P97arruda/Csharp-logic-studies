@@ -45,6 +45,52 @@
             }
 
             Console.WriteLine($"O valor a pagar pela pelo lanche e: {preco}");
+
+
+
+            /*
+             * int codigo, quantidade;
+             * string texto = string,Empty;
+             * float preco = 0;
+             * bool codigoValido = true;
+             * 
+             * 
+             *  Console.Write("Insira o codigo");
+             *  codigo = Convert.ToInt32(Console.ReadLine());
+             *  
+             *  
+             *  
+             *  swuitc(codigo)
+             *  {
+             *      case 100:
+             *          texto = "Cachorro quente";
+             *          preco = 2.5f;
+             *          break;
+             *     
+             *      case 101:
+             *          text...
+             *          
+             *      default:
+             *          codigoValido = false;
+             *          preco + 0;
+             *          break;
+             *          
+             *          
+             *   if(codigoValido)
+             *   {
+             *      console.Write("Insira a Quantidade: ");
+             *      quantidade = Convert.ToInt32(Console.ReadLine());
+             *      Console.Write($"Valor a pagar : {quantidade} * {preco} ->{texto} ={quantidade * preco}");
+             *   }
+             *   else
+             *   {
+             *      Console.WriteLine("Codigo invalido");
+             *   }
+             *  
+                    
+             *  
+             *  }
+             */
         }
     }
 }
