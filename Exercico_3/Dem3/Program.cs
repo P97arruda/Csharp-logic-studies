@@ -8,7 +8,7 @@
             double preco = 0;
             string resposta;
 
-            Console.Write("Insira o codigo do produto: ");
+            Console.Write("Insira o codigo do produto ");
             codigo = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Insira a quantidade do produto: ");
