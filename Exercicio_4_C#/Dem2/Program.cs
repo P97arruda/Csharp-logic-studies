@@ -1,4 +1,4 @@
-﻿namespace Dem1
+﻿namespace Dem2
 {
     internal class Program
     {
@@ -8,10 +8,14 @@
 
             while (numero <= 20)
             {
-                Console.WriteLine(numero);  
-                numero++;
+                if (numero % 5 != 0)
+                {
+                    Console.WriteLine(numero);
+                }
+                 numero++;
+
             }
-         
         }
+            
     }
 }
