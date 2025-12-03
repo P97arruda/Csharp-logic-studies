@@ -17,7 +17,7 @@
             {
                 case diasSemana.Domingo:
                 Console.WriteLine("Domingo");
-                break;
+                    break;
 
                 case diasSemana.Segunda:
                     Console.WriteLine("Segunda-feira");
