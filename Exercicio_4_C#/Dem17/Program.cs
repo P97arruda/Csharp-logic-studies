@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        enum EstadoPedido { Pedente = 1, Processando, concluido}
+        enum EstadoPedido { Pedente = 1, Processando = 2, concluido = 3}
         static void Main(string[] args)
         {
             int numero;
@@ -13,6 +13,13 @@
 
             EstadoPedido pedidos = (EstadoPedido)numero;
 
+
+
+            Console.WriteLine($"O pedido está {pedidos}");
+
+
+
+           /*
             switch (pedidos) 
             {
 
@@ -33,6 +40,7 @@
                     break;
             
             }
+           */
 
 
         }
