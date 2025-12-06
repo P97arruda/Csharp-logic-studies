@@ -8,7 +8,7 @@
             int numeroSecreto = gerador.Next(1, 21);
             int palpite = 0, tentativas = 3;
 
-            Console.WriteLine("Tens 3 tentativas para tenatr  adivinhar entre 1 e 20");
+            Console.WriteLine(" 3 tentativas para tenatr  adivinhar entre 1 e 20");
 
             while (tentativas > 0)
             {
