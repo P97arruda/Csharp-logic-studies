@@ -6,7 +6,7 @@
         {
             double media, salario, soma = 0;
             int  maior = 0;
-            int menor = 0;
+            int menor = 100;
             int mulheres = 0;
             int cont = 0;
             char sexo, resp = 's';
@@ -28,34 +28,23 @@
 
                 soma = soma + salario;
 
-                if (cont == 1)
+                if (idade > maior)
                 {
                     maior = idade;
-                    menor = idade;
-                }
-                else
-                {
-                    if (idade > maior)
-                    {
-                        maior = idade;
-                    }
-                    else
-                    {
-                        if (idade < menor)
-                        {
-                            menor = idade;
-                        }
-                    }
                 }
 
-                if (sexo == 'F')
+                if (idade < menor)
+                {
+                    menor = idade;
+                }
+
+                if (sexo == 'f')
                 {
                     if (salario <= 500)
                     {
-                        mulheres ++;
+                        mulheres++;
                     }
                 }
-
                 Console.Write("Continuar (s/n)? ");
                 Char.TryParse(Console.ReadLine(), out resp);
             }
