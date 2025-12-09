@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\plini\\Desktop\\GitCloneC#\\Csharp-logic-studies\\Exercicio_5_C#\\Dem2\\Dem2.csproj",
+      "projectUniqueName": "C:\\Users\\plini\\Desktop\\GitClone\\Csharp-logic-studies\\Exercicio_5_C#\\Dem2\\Dem2.csproj",
       "projectName": "Dem2",
-      "projectPath": "C:\\Users\\plini\\Desktop\\GitCloneC#\\Csharp-logic-studies\\Exercicio_5_C#\\Dem2\\Dem2.csproj",
+      "projectPath": "C:\\Users\\plini\\Desktop\\GitClone\\Csharp-logic-studies\\Exercicio_5_C#\\Dem2\\Dem2.csproj",
       "packagesPath": "C:\\Users\\plini\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\plini\\Desktop\\GitCloneC#\\Csharp-logic-studies\\Exercicio_5_C#\\Dem2\\obj\\",
+      "outputPath": "C:\\Users\\plini\\Desktop\\GitClone\\Csharp-logic-studies\\Exercicio_5_C#\\Dem2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -72,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

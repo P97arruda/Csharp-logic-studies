@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\plini\\Desktop\\GitCloneC#\\Csharp-logic-studies\\Exercicio_5_C#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30F15E03-14C1-4BF4-BA23-652F49C80B8F}|Dem3\\Dem3.csproj|c:\\users\\plini\\desktop\\gitclonec#\\csharp-logic-studies\\exercicio_5_c#\\dem3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30F15E03-14C1-4BF4-BA23-652F49C80B8F}|Dem3\\Dem3.csproj|solutionrelative:dem3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3487F0FA-EB2E-48FD-AAD8-E0502C896C97}|Dem1\\Dem1.csproj|c:\\users\\plini\\desktop\\gitclonec#\\csharp-logic-studies\\exercicio_5_c#\\dem1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3487F0FA-EB2E-48FD-AAD8-E0502C896C97}|Dem1\\Dem1.csproj|solutionrelative:dem1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30F15E03-14C1-4BF4-BA23-652F49C80B8F}|Dem3\\Dem3.csproj|c:\\users\\plini\\desktop\\gitclonec#\\csharp-logic-studies\\exercicio_5_c#\\dem3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30F15E03-14C1-4BF4-BA23-652F49C80B8F}|Dem3\\Dem3.csproj|solutionrelative:dem3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{190FBAB6-2F8B-49D9-93EA-22BF480A273A}|Dem2\\Dem2.csproj|c:\\users\\plini\\desktop\\gitclonec#\\csharp-logic-studies\\exercicio_5_c#\\dem2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,11 +22,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\plini\\Desktop\\GitCloneC#\\Csharp-logic-studies\\Exercicio_5_C#\\Dem3\\Program.cs",
               "RelativeDocumentMoniker": "Dem3\\Program.cs",
@@ -51,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\plini\\Desktop\\GitCloneC#\\Csharp-logic-studies\\Exercicio_5_C#\\Dem1\\Program.cs",
               "RelativeDocumentMoniker": "Dem1\\Program.cs",
