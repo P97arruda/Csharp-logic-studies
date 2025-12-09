@@ -1,0 +1,15 @@
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\bin\Debug\net8.0\Dem1.exe
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\bin\Debug\net8.0\Dem1.deps.json
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\bin\Debug\net8.0\Dem1.runtimeconfig.json
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\bin\Debug\net8.0\Dem1.dll
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\bin\Debug\net8.0\Dem1.pdb
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\obj\Debug\net8.0\Dem1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\obj\Debug\net8.0\Dem1.AssemblyInfoInputs.cache
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\obj\Debug\net8.0\Dem1.AssemblyInfo.cs
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\obj\Debug\net8.0\Dem1.csproj.CoreCompileInputs.cache
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\obj\Debug\net8.0\Dem1.sourcelink.json
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\obj\Debug\net8.0\Dem1.dll
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\obj\Debug\net8.0\refint\Dem1.dll
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\obj\Debug\net8.0\Dem1.pdb
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\obj\Debug\net8.0\Dem1.genruntimeconfig.cache
+C:\Users\plini\Desktop\GitCloneC#\Csharp-logic-studies\Exercicio_5_C#\Dem1\obj\Debug\net8.0\ref\Dem1.dll
