@@ -16,7 +16,7 @@
                 ze = ze + 0.03;
             }
 
-            Console.WriteLine($"Ze sera maior que joao depois de {anos} anos");
+            Console.WriteLine($"Zee sera maior que joao depois de {anos} anos");
         }
     }
 }
