@@ -1,35 +1,33 @@
-# ======== GLOBAL GITIGNORE ========
-# Visual Studio
-.vs/
-.vscode/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
+# ===== GLOBAL GITIGNORE (C# / Visual Studio) =====
 
-# Build results
+# Visual Studio (qualquer nível)
+.vs/
+**/.vs/
+**/*.suo
+**/*.user
+**/*.userosscache
+**/*.sln.docstates
+
+# Build (.NET)
 bin/
 obj/
-Debug/
-Release/
-out/
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
 
-# System files
+# NuGet
+**/packages/
+**/project.assets.json
+**/*.nuget.*
+
+# Logs e temporários
+**/*.log
+**/*.tmp
+**/*.cache
+
+# Sistema
 Thumbs.db
-ehthumbs.db
 Desktop.ini
-
-# Logs and temp files
-*.log
-*.tmp
-*.cache
-*.db
-*.db-wal
-*.db-shm
-
-# Recycle
 $RECYCLE.BIN/
 
-# IDEs
-.idea/
-*.iml
