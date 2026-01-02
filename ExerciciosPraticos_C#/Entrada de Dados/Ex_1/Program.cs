@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World Plinio!");
+            Console.WriteLine("Vamos co tudo !");
         }
     }
 }
