@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int numero; 
+
+            Console.WriteLine("Insira um numero: ");
+            int.TryParse(Console.ReadLine(), out numero);
+
+
+
         }
     }
 }
