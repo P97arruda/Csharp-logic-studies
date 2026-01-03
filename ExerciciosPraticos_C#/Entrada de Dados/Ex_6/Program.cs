@@ -5,7 +5,7 @@
 
     internal class Program
     {
-        int numero1, numero2;
+        
 
         static void Main(string[] args)
         {

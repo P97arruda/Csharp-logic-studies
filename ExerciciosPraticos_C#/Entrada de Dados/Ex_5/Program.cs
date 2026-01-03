@@ -3,7 +3,7 @@
     // 5. Leia dois números e exiba o maior
     internal class Program
     {
-        int numero1, numero2;
+        
         static void Main(string[] args)
         {
             Console.Write("Insira um numero: ");
