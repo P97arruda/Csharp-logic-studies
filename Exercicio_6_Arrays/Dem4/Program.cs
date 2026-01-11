@@ -4,6 +4,10 @@ namespace Dem4
 {
     internal class Program
     {
+        //4. Elabore um programa que calcule: 
+        //a) O somatório de todos os elementos de um array com N números.
+        //b) A média aritmética de todos os elementos de um array de N números.
+
         static void Main(string[] args)
         {
             int quantidade;

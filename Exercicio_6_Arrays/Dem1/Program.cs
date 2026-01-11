@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+        // 1. Elabore um programa que leia um vetor com N números inteiros e os mostre.
         static void Main(string[] args)
         {
             //int[] numero = new int[5];
