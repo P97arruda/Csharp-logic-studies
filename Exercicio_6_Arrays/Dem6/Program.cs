@@ -21,7 +21,7 @@
             {
                 do
                 {
-                    Console.Write($"Insira um numero: {i + 1}: ");
+                    Console.Write($"Insira um numero {i + 1}: ");
                 } while (!int.TryParse(Console.ReadLine(), out numero[i]));
             }
 
