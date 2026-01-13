@@ -11,12 +11,13 @@
         static void Main(string[] args)
         {
             int tamanho;
+
             Console.Write("Insira o tamanho do Array");
             int.TryParse(Console.ReadLine(), out tamanho);
 
             int[] numero = new int[tamanho];
 
-            for (int i = 0; i <numero.Length; i++)
+            for (int i = 0; i < numero.Length; i++)
             {
                 do
                 {
