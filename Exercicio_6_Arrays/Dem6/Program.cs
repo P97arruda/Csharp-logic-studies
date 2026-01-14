@@ -12,7 +12,7 @@
         {
             int tamanho;
 
-            Console.Write("Insira o tamanho do Array");
+            Console.Write("Insira o tamanho do Array: ");
             int.TryParse(Console.ReadLine(), out tamanho);
 
             int[] numero = new int[tamanho];
@@ -21,25 +21,29 @@
             {
                 do
                 {
-                    Console.Write($"Insira um numero {i + 1}: ");
+                    Console.Write($"Insira um numero: {i + 1}: ");
                 } while (!int.TryParse(Console.ReadLine(), out numero[i]));
             }
 
-            int numeroRepetido;
+            //int numeroRepetido;
+            int[] numeroRepetido = new int[numero.Length];
 
             for (int i = 0; i < numero.Length; i++)
             {
-                numeroRepetido = 0;
+                //numeroRepetido = 0;
+                numeroRepetido[i] = 0;
+                
 
                 for (int j = 0; j < numero.Length; j++)
                 {
                     if (numero[i] == numero[j])
                     {
-                        numeroRepetido++;
+                        numeroRepetido[i]++;
                     }
                 }
-                Console.WriteLine($"O numero {numero[i]} se repete {numeroRepetido} vezes");
+                Console.WriteLine($"O numero {numero[i]} se repete {numeroRepetido[i]} vezes");
             }
+            
 
         }
     }
