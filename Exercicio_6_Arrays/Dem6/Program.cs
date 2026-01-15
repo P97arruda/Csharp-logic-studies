@@ -4,7 +4,7 @@
     {
         //Elabore um programa que conte o número de vezes que cada elemento ocorre num vetor de N
         //inteiros.Por exemplo, no vetor A:
-                                            //A = {4,2,5,4,3,5,2,2,4}
+        //A = {4,2,5,4,3,5,2,2,4}
         //4 ocorre três vezes
         //2 ocorre três vezes
         //Etc....
@@ -30,21 +30,33 @@
 
             for (int i = 0; i < numero.Length; i++)
             {
-                //numeroRepetido = 0;
-                numeroRepetido[i] = 0;
-                
-
-                for (int j = 0; j < numero.Length; j++)
+                if (numeroRepetido[i] != -1)
                 {
-                    if (numero[i] == numero[j])
-                    {
-                        numeroRepetido[i]++;
-                    }
-                }
-                Console.WriteLine($"O numero {numero[i]} se repete {numeroRepetido[i]} vezes");
-            }
-            
+                    numeroRepetido[i] = 0;
 
+                    for (int j = 0; j < numero.Length; j++)
+                    {
+                        if (numero[i] == numero[j])
+                        {
+                            numeroRepetido[i]++;
+
+                            if (i != j)
+                            {
+                                numeroRepetido[j] = -1;
+                            }
+                        }
+                    }
+
+                    Console.WriteLine($"O numero {numero[i]} se repete {numeroRepetido[i]} vezes");
+                }
+
+
+            }
         }
+
+
+
+
     }
+
 }
