@@ -44,7 +44,7 @@ namespace Dem2
             Console.ReadKey();
             Console.Clear();
 
-            //O maior elemento de cada linha da matriz;
+            //O maior elemento de cada linha da matriz
 
             int[,] numeroMaior = new int[10, 1];
 
