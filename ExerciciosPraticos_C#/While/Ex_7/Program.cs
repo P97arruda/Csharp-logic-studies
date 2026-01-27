@@ -16,11 +16,12 @@
                 if(numero < 500)
                 {
                     soma += numero;
-                    
 
                 }
-                
+                soma++;
             }
+
+            Console.WriteLine($"A soma do valor total: {soma}");
         }
     }
 }

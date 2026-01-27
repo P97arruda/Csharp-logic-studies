@@ -4,7 +4,7 @@ namespace Ex_2
 {
     internal class Program
     {
-        //32. Leia números e some-os até que o usuário digite 0.
+        //. Leia números e some-os até que o usuário digite 0.
 
         static void Main(string[] args)
         {

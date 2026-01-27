@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        //31.Mostre os números de 1 a 10 usando while.
+        //.Mostre os números de 1 a 10 usando while.
 
         static void Main(string[] args)
         {
