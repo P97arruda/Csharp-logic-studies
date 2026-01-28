@@ -14,11 +14,11 @@ namespace Dem2
             //double resultado;
 
             n1 = PedirNumero();
-            n2 = PedirNumero();
+            //n2 = PedirNumero();
 
 
             //resultado = MostrarRaizes(n1, n2);
-            Console.WriteLine($"Resultado: {MostrarRaizes(n1,n2)}");
+            Console.WriteLine($"Resultado: {MostrarRaizes(n1)}");
 
             //MostrarRaizes(n1, n2);
         }
@@ -38,17 +38,17 @@ namespace Dem2
 
         }
         
-        static double MostrarRaizes(int Inf, int Sup)
+        static double MostrarRaizes(int numero)
         {
-            double raiz = 0;
+            //double raiz = 0;
 
            
-                while (Inf <= Sup)
-                {
-                    raiz = Math.Sqrt(Inf);
-                    Inf++;
-                }
-            return raiz;
+            //    while (Inf <= Sup)
+            //    {
+            //        raiz = Math.Sqrt(Inf);
+            //        Inf++;
+            //    }
+            return Math.Sqrt(numero);
         }
     }
 }
