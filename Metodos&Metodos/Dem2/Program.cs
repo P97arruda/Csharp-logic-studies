@@ -6,23 +6,23 @@ namespace Dem2
     {
 
         //2. Modifique o procedimento anterior, transformando-o numa função.
-        
-        static void Main(string[] args)
+
+        static void Main(string[] args) 
         {
             int n1, n2;
+
+            //double resultado;
 
             n1 = PedirNumero();
             n2 = PedirNumero();
 
-            //TrocaValor(n1, n2);
 
-            MostrarRaizes(n1, n2);
+            //resultado = MostrarRaizes(n1, n2);
+            Console.WriteLine($"Resultado: {MostrarRaizes(n1,n2)}");
 
-
+            //MostrarRaizes(n1, n2);
         }
 
-
-        
         static int PedirNumero()
         {
             int numero;
@@ -30,44 +30,25 @@ namespace Dem2
             do
             {
 
-                Console.Write("Insira o numero: ");
+                Console.Write("Insira um numero: ");
 
-            } while (!int.TryParse(Console.ReadLine(), out numero));
+            }while (!int.TryParse(Console.ReadLine(), out numero));
 
             return numero;
+
         }
-
-
-
-        //static int TrocaValor(int n1, int n2)
-        //{
-        //    int troca;
-
-        //    if (n1 < n2)
-        //    {
-        //        troca = n1;
-        //       n1 = n2;
-        //       n2 = troca;
-        //    }
-        //    return (n1, n2);
-        //}
-
-
-
-        static void MostrarRaizes(int Inf, int Sup)
+        
+        static double MostrarRaizes(int Inf, int Sup)
         {
+            double raiz = 0;
 
-            while (Inf <= Sup)
-            {
-                double raiz = Math.Sqrt(Inf);
-                Console.WriteLine($"Raiz de {Inf} = {Math.Round(raiz, 2)}");
-                Inf++;
-
-
-            }
-
-
+           
+                while (Inf <= Sup)
+                {
+                    raiz = Math.Sqrt(Inf);
+                    Inf++;
+                }
+            return raiz;
         }
-
     }
 }
