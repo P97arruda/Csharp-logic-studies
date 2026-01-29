@@ -64,7 +64,7 @@ namespace Dem1
 
 
 
-
+       
         static void  MostrarRaizes( int Inf, int Sup)
         {
 

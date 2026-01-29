@@ -19,10 +19,8 @@ namespace Dem2
 
             //resultado = MostrarRaizes(n1, n2);
             Console.WriteLine($"Resultado: {MostrarRaizes(n1)}");
-
-            //MostrarRaizes(n1, n2);
         }
-
+       
         static int PedirNumero()
         {
             int numero;
@@ -37,17 +35,15 @@ namespace Dem2
             return numero;
 
         }
-        
+
+        /// <summary>
+        ///  Calcula a raiz quadrada do número recebido
+        /// </summary>
+        /// <param name="numero"></param>
+        /// <returns> Raiz quadrada do número </returns>
         static double MostrarRaizes(int numero)
         {
-            //double raiz = 0;
-
-           
-            //    while (Inf <= Sup)
-            //    {
-            //        raiz = Math.Sqrt(Inf);
-            //        Inf++;
-            //    }
+            
             return Math.Sqrt(numero);
         }
     }
