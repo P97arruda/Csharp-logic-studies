@@ -33,16 +33,6 @@ namespace EstruturaSequencial
             valorPagar = quantidade1 * valor1 + quantidade2 * valor2;
 
             Console.WriteLine($" O VALOR A PAGAR: {valorPagar}");
-
-
-
-
-
-
-
-
-
-
         }
     }
 }
