@@ -9,16 +9,22 @@ namespace Dem3
         static void Main(string[] args)
         {
             string[] nomes = new string[5];
-           int X = 0;
+            int X = 0;
 
             PreencherTabela(nomes);
 
-            MostarNomes(X);
+           
 
-           // Console.WriteLine($"{nomes[X]}");
+            Console.WriteLine("Informe a quantidade de nomes que deseja ver: ");
+            int.TryParse(Console.ReadLine(), out X);
+
+            MostarNomes(nomes, X);
 
         }
-
+        /// <summary>
+        /// Preenche um array de nomes com valores introduzidos pelo utilizador.
+        /// </summary>
+        /// <param name="nomes"></param>
         static void PreencherTabela(string[] nomes)
         {
             for (int i = 0; i < nomes.Length; i++)
@@ -28,21 +34,18 @@ namespace Dem3
             }
         }
 
-        static void MostarNomes(int X) 
+        /// <summary>
+        /// Escreve os primeiros X nomes de um array.
+        /// </summary>
+        /// <param name="nomes"> Array que contém os nomes a serem apresentados. </param>
+        /// <param name="X"> Quantidade de nomes a apresentar a partir do início do array. </param>
+        static void MostarNomes(string[] nomes, int X) 
         {
-            //int X;
-            
-            do
-            {
-
-                Console.WriteLine("Indique até que posição da tabela pretende visualizar os nomes:");
-
-            } while (!int.TryParse(Console.ReadLine(), out X));
-
+          
 
             for (int i = 0; i < X; i++) 
             {
-                Console.WriteLine($"{X}");
+                Console.WriteLine(nomes[i]);
             }
         
         }

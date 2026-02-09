@@ -11,13 +11,13 @@ namespace Dem2
         {
             int n1, n2;
 
-            //double resultado;
+            
 
             n1 = PedirNumero();
-            //n2 = PedirNumero();
+            
 
 
-            //resultado = MostrarRaizes(n1, n2);
+            
             Console.WriteLine($"Resultado: {MostrarRaizes(n1)}");
         }
        

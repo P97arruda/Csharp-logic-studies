@@ -23,7 +23,7 @@ namespace Dem1
             PedirNumeroPorReferencia(ref n1);
             PedirNumeroPorReferencia(ref n2);
 
-            TrocaValor(ref n1, ref n2);
+            //TrocaValor(ref n1, ref n2);
 
             //Console.WriteLine();
 
@@ -50,21 +50,25 @@ namespace Dem1
 
 
 
-        static void TrocaValor(ref int n1, ref int n2)
-        {
-            int troca;
+        //static void TrocaValor(ref int n1, ref int n2)
+        //{
+        //    int troca;
 
-            if (n1 > n2)
-            {
-                troca = n1;
-                n1 = n2;
-                n2 = troca;
-            }
-        }
+        //    if (n1 > n2)
+        //    {
+        //        troca = n1;
+        //        n1 = n2;
+        //        n2 = troca;
+        //    }
+        //}
 
 
 
-       
+       /// <summary>
+       /// 
+       /// </summary>
+       /// <param name="Inf"></param>
+       /// <param name="Sup"></param>
         static void  MostrarRaizes( int Inf, int Sup)
         {
 
