@@ -10,42 +10,38 @@ namespace Dem5
         // começam por A, B ou C
         static void Main(string[] args)
         {
-            string[] nome = new string[] {"Maria", "Ana", "Julia", "Carla", "Ana Julia" };
+            string[] nome = new string[] { "Maria", "Ana", "Julia", "Carla", "Ana Julia" };
 
+
+
+
+            int resultado = ContarIniciais(nome);
+
+            Console.WriteLine($" Total de nomes com iniciais A, B ou C: {resultado}");
             
-
-
-            int[] resultado = ContarIniciais(nome);
-
-            Console.WriteLine($"A: {resultado[0]}");
-            Console.WriteLine($"B: {resultado[1]}");
-            Console.WriteLine($"C: {resultado[2]}");
         }
 
 
         /// <summary>
-        /// Conta iniciais A, B e C.
+        /// Conta nomes com inicial A, B ou C.
         /// </summary>
-        /// <param name="nomes"> Array de strings </param>
-        /// <returns> Array de contadores. </returns>
-        static int[] ContarIniciais (string[] nomes)
+        /// <param name="nomes">Array de strings.</param>
+        /// <returns>Array de contadores.</returns>
+        static int ContarIniciais(string[] nomes)
         {
-            int[] contadores = new int[3];
+            int contador = 0;
 
-            for (int i = 0; i < nomes.Length; i++) 
+            for (int i = 0; i < nomes.Length; i++)
             {
-                if (nomes[i][0] == 'A')
-                    nomes[i][0] == "B")
+                char inicial = nomes[i][0];
+
+                if (inicial == 'A' || inicial == 'B' || inicial == 'C')
                 {
-                    
+                    contador++;
                 }
-                contadores[0]++;
             }
 
-        
-
-            return contadores;
+            return contador;
         }
-
     }
 }

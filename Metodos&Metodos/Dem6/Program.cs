@@ -6,14 +6,22 @@
         static void Main(string[] args)
         {
            // int segundos;
-            double segundos;
+            int  segundos;
+            int horas;
+            int minutos;
 
             segundos = PedirSegundos();
 
-            Console.WriteLine($"Resultado: {Conversor(Math.Round(segundos,2))}");
+            horas = ConversorHoras(segundos);
+            minutos = ConversorMinutos(segundos);
+
+            Console.WriteLine($"Resultado: {horas}h {minutos}min");
 
         }
-
+        /// <summary>
+        /// Solicita ao utilizador a quantidade de segundos.
+        /// </summary>
+        /// <returns>Quantidade de segundos.</returns>
         static int PedirSegundos() 
         {
             int segundos = 0;
@@ -24,16 +32,32 @@
             return segundos;
         }
 
-        static double Conversor(double  segundos) 
+        /// <summary>
+        /// Converte segundos em horas.
+        /// </summary>
+        /// <param name="segundos"></param>
+        /// <returns>Total de horas.</returns>
+        static int ConversorHoras(int  segundos) 
         {
-            //int horas, minutos;
-            double horas , minutos;
+            int horas;
 
             horas = segundos / 3600;
-            //minutos = (segundos % 3600) / 60;
-
-
+            
             return horas;
+        }
+
+        /// <summary>
+        /// Converte segundos em minutos.
+        /// </summary>
+        /// <param name="segundos"></param>
+        /// <returns>Total de minutos.</returns>
+        static int  ConversorMinutos(int segundos)
+        {
+            int minutos;
+
+            minutos = (segundos % 3600) / 60;
+
+            return minutos;
         }
     }
 }
