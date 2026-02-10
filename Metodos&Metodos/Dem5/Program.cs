@@ -25,8 +25,8 @@ namespace Dem5
         /// <summary>
         /// Conta nomes com inicial A, B ou C.
         /// </summary>
-        /// <param name="nomes">Array de strings.</param>
-        /// <returns>Array de contadores.</returns>
+        /// <param name="nomes">vetor de nomes.</param>
+        /// <returns>total de nomes encontrados</returns>
         static int ContarIniciais(string[] nomes)
         {
             int contador = 0;

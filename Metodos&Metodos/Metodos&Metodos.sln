@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dem6", "Dem6\Dem6.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dem7", "Dem7\Dem7.csproj", "{4B479BEB-10DD-4F0D-8F55-F476BD90AD20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dem8", "Dem8\Dem8.csproj", "{AFE17BAB-2A01-4BE6-A409-B640EB2B410E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{4B479BEB-10DD-4F0D-8F55-F476BD90AD20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B479BEB-10DD-4F0D-8F55-F476BD90AD20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B479BEB-10DD-4F0D-8F55-F476BD90AD20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE17BAB-2A01-4BE6-A409-B640EB2B410E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE17BAB-2A01-4BE6-A409-B640EB2B410E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE17BAB-2A01-4BE6-A409-B640EB2B410E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE17BAB-2A01-4BE6-A409-B640EB2B410E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

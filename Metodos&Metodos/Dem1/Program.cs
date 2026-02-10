@@ -48,22 +48,6 @@ namespace Dem1
             } while (!int.TryParse(Console.ReadLine(), out numero));
         }
 
-
-
-        //static void TrocaValor(ref int n1, ref int n2)
-        //{
-        //    int troca;
-
-        //    if (n1 > n2)
-        //    {
-        //        troca = n1;
-        //        n1 = n2;
-        //        n2 = troca;
-        //    }
-        //}
-
-
-
        /// <summary>
        /// 
        /// </summary>
@@ -83,6 +67,20 @@ namespace Dem1
             
 
         }
+
+
+
+        //static void TrocaValor(ref int n1, ref int n2)
+        //{
+        //    int troca;
+
+        //    if (n1 > n2)
+        //    {
+        //        troca = n1;
+        //        n1 = n2;
+        //        n2 = troca;
+        //    }
+        //}
     }
 
 
