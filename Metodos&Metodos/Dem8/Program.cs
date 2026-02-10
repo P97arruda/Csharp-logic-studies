@@ -28,6 +28,15 @@ namespace Dem8
 
             }
 
+            for (int i = 0; i < 5; i++)   // linhas
+            {
+                for (int j = 0; j < 5; j++) // colunas
+                {
+                    Console.Write(numeros[i, j] + "\t");
+                }
+                Console.WriteLine();
+            }
+
             Console.WriteLine("Qual linha da matriz gostaria de ver os valores: ");
             int.TryParse(Console.ReadLine(), out linha);
 
@@ -35,14 +44,42 @@ namespace Dem8
             int.TryParse(Console.ReadLine(), out coluna);
 
 
-            for (int i = 0; i <= linha; i++)   // linhas
+            Console.WriteLine(numeros[linha, coluna]);
+
+
+
+
+
+            int somaColuna = 0;
+            int somaLinha = 0;
+            
+            
+
+            // Soma da coluna
+            Console.Write("Qual coluna voce gostaria de ver a soma: ");
+            int.TryParse(Console.ReadLine(), out coluna);
+            coluna--;
+
+            for (int i = 0; i < 5; i++)
             {
-                for (int j = 0; j <= coluna; j++) // colunas
-                {
-                    Console.Write(numeros[i, j] + "\t");
-                }
-                Console.WriteLine();
+                somaColuna += numeros[i, coluna];
             }
+
+            Console.WriteLine($"A coluna escolhida foi: {coluna + 1} e a soma é: {somaColuna}");
+
+
+            // Soma da linha
+            Console.Write("Qual linha voce gostaria de ver a soma: ");
+            int.TryParse(Console.ReadLine(), out linha);
+            linha--;
+
+            for (int j = 0; j < 5; j++)
+            {
+                somaLinha += numeros[linha, j];
+            }
+
+            Console.WriteLine($"A linha escolhida foi: {linha + 1} e a soma é: {somaLinha}");
+
         }
     }
 }

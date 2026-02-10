@@ -61,11 +61,7 @@ namespace Dem1
                 double raiz = Math.Sqrt(Inf);
                 Console.WriteLine($"Raiz de {Inf} = {Math.Round(raiz,2)}");
                 Inf++;
-
-                
             }
-            
-
         }
 
 
