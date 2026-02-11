@@ -28,11 +28,12 @@ namespace Dem7
 
             MostrarValoresCoordenadas(numeros, linha, coluna);
 
-            Console.Write("Qual linha quer somar (0 a 4): ");
+
+            Console.Write("Qual linha quer somar: ");
             int.TryParse(Console.ReadLine(), out somaLinha);
            
 
-            Console.Write("Qual coluna quer somar (0 a 4): ");
+            Console.Write("Qual coluna quer somar: ");
             int.TryParse(Console.ReadLine(), out somaColuna);
            
 
@@ -80,16 +81,31 @@ namespace Dem7
         }
 
         /// <summary>
-        /// Mostra os valores da linha e da coluna indicadas.
+        /// Mostra o valor na coordenada indicada.
         /// </summary>
         /// <param name="numeros">Matriz de inteiros.</param>
-        /// <param name="linha">Linha a mostrar.</param>
-        /// <param name="coluna">Coluna a mostrar.</param>
-        static void MostrarValoresCoordenadas(int[,] numeros, int linha, int coluna) 
-         {
+        /// <param name="linha">Linha da posição.</param>
+        /// <param name="coluna">Coluna da posição.</param>
+        static void MostrarValoresCoordenadas(int[,] numeros, int linhapPsicao, int colunaPosicao) 
+        {
+            linhapPsicao--;
+            colunaPosicao--;
 
-            Console.WriteLine(numeros[linha, coluna]);
+            int posicao = -1;
 
+            
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0;j < 5; j++)
+                {
+                    if (linhapPsicao == i && colunaPosicao == j)
+                    {
+                        posicao = numeros[i,j];
+                    }
+                }
+            }
+
+            Console.WriteLine($"valor encontrado: {posicao}");
         }
 
 
@@ -102,6 +118,9 @@ namespace Dem7
         /// <returns>Somatório da linha/coluna indicada.</returns>
         static int SomarValoresCordenadas(int[,] numeros, int somalinha, int somacoluna)
         {
+            somalinha--;
+            somacoluna--;
+
             int total = 0;
 
             for (int j = 0; j < 5; j++)
