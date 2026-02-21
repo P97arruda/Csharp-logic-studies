@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomaProduto", "SomaProduto\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaioTriangulo", "RaioTriangulo\RaioTriangulo.csproj", "{184A9729-F273-47F4-AA0D-5B565A00C994}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioFixacao", "ExercicioFixacao\ExercicioFixacao.csproj", "{685643E8-DCC1-42DD-BA41-4111DCF6E43E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{184A9729-F273-47F4-AA0D-5B565A00C994}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{184A9729-F273-47F4-AA0D-5B565A00C994}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{184A9729-F273-47F4-AA0D-5B565A00C994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{685643E8-DCC1-42DD-BA41-4111DCF6E43E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{685643E8-DCC1-42DD-BA41-4111DCF6E43E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{685643E8-DCC1-42DD-BA41-4111DCF6E43E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{685643E8-DCC1-42DD-BA41-4111DCF6E43E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
