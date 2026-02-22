@@ -1,6 +1,7 @@
 ﻿using System.Runtime.ConstrainedExecution;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
+using System.Globalization;
 namespace RaioTriangulo
 {
     internal class Program
@@ -12,15 +13,16 @@ namespace RaioTriangulo
 
         static void Main(string[] args)
         {
-            double raio; 
+            double area;
+            double raio;
+            double PI = 3.14159;
 
-            Console.Write(" ");
-            double.TryParse(Console.ReadLine(), out raio);
+            Console.Write("Insira o valor do raio: ");
+            double.TryParse(Console.ReadLine(), NumberStyles.Any, CultureInfo.InvariantCulture, out raio);
 
+            area = PI * raio * raio;
 
-
-            Console.WriteLine($"A = {raio}");
-
+            Console.WriteLine($"Area = {area.ToString("F4", CultureInfo.InvariantCulture)}");
         }
     }
 }
