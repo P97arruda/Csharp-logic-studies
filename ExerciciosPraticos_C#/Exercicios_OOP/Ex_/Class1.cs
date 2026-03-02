@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Ex_
 {
-    internal class Class1
+    public class Class1
     {
         public string Nome;
 
         public int Idade;
 
+        public double Salario;
     }
 }
