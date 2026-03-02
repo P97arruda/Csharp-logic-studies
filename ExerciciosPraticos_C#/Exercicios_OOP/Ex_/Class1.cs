@@ -9,6 +9,7 @@ namespace Ex_
     internal class Class1
     {
         public string Nome;
+
         public int Idade;
 
     }
