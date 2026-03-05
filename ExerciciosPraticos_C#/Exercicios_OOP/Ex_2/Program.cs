@@ -1,5 +1,6 @@
 ﻿using Ex_;
 using System.Runtime.InteropServices;
+using System.Globalization;
 
 namespace Ex_2
 {
@@ -14,13 +15,13 @@ namespace Ex_2
             p1.Nome = Console.ReadLine();
 
             Console.WriteLine("Insira o salario da primeira pessoa");
-            p1.Salario = double.Parse(Console.ReadLine());
+            p1.Salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.WriteLine("Insira o nome da segunda pessoa");
             p2.Nome = Console.ReadLine();
 
             Console.WriteLine("Insira o salario da segunda pessoa");
-            p2.Salario = double.Parse(Console.ReadLine());
+            p2.Salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             double salarioMedio = (p1.Salario + p2.Salario) / 2;
 

@@ -3,17 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
-namespace Ex_
+namespace Ex_3
 {
-    public class Class1
+    internal class Retangulo
     {
-        public string Nome;
+        public double Largura;
+        public double ALtura;
 
-        public int Idade;
-
-        public double Salario;
     }
-
-
 }
