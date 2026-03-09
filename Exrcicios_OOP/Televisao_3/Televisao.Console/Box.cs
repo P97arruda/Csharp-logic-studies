@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Televisao.Console
+﻿namespace Televisao.Console
 {
     public class Box
     {
@@ -28,7 +22,7 @@ namespace Televisao.Console
 
         #region Propriedades
 
-        public int Canal 
+        public int Canal
         {
             get
             {
@@ -37,12 +31,12 @@ namespace Televisao.Console
 
             set
             {
-               if(value >= 0 && value <= _numeroCanais)
+                if (value >= 0 && value <= _numeroCanais)
                 {
                     _canal = value;
                 }
             }
-          
+
         }
 
         /// <summary>
@@ -50,14 +44,14 @@ namespace Televisao.Console
         /// </summary>
         public int NumeroCanais
         {
-            get 
-            { 
-                return _numeroCanais; 
+            get
+            {
+                return _numeroCanais;
             }
             set
             {
                 _numeroCanais = value;
-            }   
+            }
         }
 
         /// <summary>
@@ -65,9 +59,9 @@ namespace Televisao.Console
         /// </summary>
         public bool Mute
         {
-            get 
-            { 
-                return _mute; 
+            get
+            {
+                return _mute;
             }
 
         }
@@ -82,7 +76,7 @@ namespace Televisao.Console
 
             set
             {
-                if(value >= 0 && value <= 100)
+                if (value >= 0 && value <= 100)
                 {
                     _volume = value;
                 }
@@ -155,14 +149,14 @@ namespace Televisao.Console
             try
             {
                 //coloco o código que quero executar 
-               // e se correr mal a culpa é externa 
+                // e se correr mal a culpa é externa 
                 GravarInfo();
             }
             catch (Exception e)
             {
                 _mensagem = e.Message;
             }
-            
+
             _mensagem = "Box desligada!!!";
         }
 
@@ -174,9 +168,9 @@ namespace Televisao.Console
             //1:90
             string linha = $"{_canal};{_volume}";
 
-            StreamWriter sw = new  StreamWriter(ficheiro, false);
+            StreamWriter sw = new StreamWriter(ficheiro, false);
 
-            if (!File.Exists(ficheiro)) 
+            if (!File.Exists(ficheiro))
             {
                 sw = File.CreateText(ficheiro);
             }
@@ -192,13 +186,13 @@ namespace Televisao.Console
 
             //8;40
 
-            if(File.Exists(ficheiro))
+            if (File.Exists(ficheiro))
             {
                 sr = File.OpenText(ficheiro);
 
                 string linha = "";
 
-                while((linha  = sr.ReadLine()) != null)
+                while ((linha = sr.ReadLine()) != null)
                 {
                     string[] campos = new string[2];
 
