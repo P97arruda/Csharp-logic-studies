@@ -17,6 +17,8 @@
 
         private bool _mute;
 
+        private int _canalAnterior;
+
 
         #endregion
 
@@ -33,6 +35,7 @@
             {
                 if (value >= 0 && value <= _numeroCanais)
                 {
+                    _canalAnterior = _canal; 
                     _canal = value;
                 }
             }
@@ -68,9 +71,13 @@
 
 
         public int Volume
-        {
+           {
+
             get
             {
+                if (_mute)
+                    return 0;
+
                 return _volume;
             }
 
@@ -211,6 +218,12 @@
             _mute = !_mute;
         }
 
+        public void VoltarCanalAnterior()
+        {
+            int temp = _canal;
+            _canal = _canalAnterior;
+            _canalAnterior = temp;
+        }
 
 
         #endregion

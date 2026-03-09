@@ -31,17 +31,18 @@
             btnOnOff = new Button();
             lblInfo = new Label();
             groupBoxCanais = new GroupBox();
+            btnCanalAnterior = new Button();
             lblCanal = new Label();
             btnAumentaCanal = new Button();
             btnDiminuiCanal = new Button();
             groupBoxVolume = new GroupBox();
+            btnMute = new Button();
             progressBarVolume = new ProgressBar();
             btnAumenteVolume = new Button();
             btndiminuiVolume = new Button();
             menuStrip1 = new MenuStrip();
             toolStripMenuItem1 = new ToolStripMenuItem();
             lblTotalCanais = new Label();
-            btnMute = new Button();
             groupBoxCanais.SuspendLayout();
             groupBoxVolume.SuspendLayout();
             menuStrip1.SuspendLayout();
@@ -70,6 +71,7 @@
             // 
             // groupBoxCanais
             // 
+            groupBoxCanais.Controls.Add(btnCanalAnterior);
             groupBoxCanais.Controls.Add(lblCanal);
             groupBoxCanais.Controls.Add(btnAumentaCanal);
             groupBoxCanais.Controls.Add(btnDiminuiCanal);
@@ -77,10 +79,22 @@
             groupBoxCanais.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             groupBoxCanais.Location = new Point(486, 26);
             groupBoxCanais.Name = "groupBoxCanais";
-            groupBoxCanais.Size = new Size(321, 204);
+            groupBoxCanais.Size = new Size(321, 221);
             groupBoxCanais.TabIndex = 2;
             groupBoxCanais.TabStop = false;
             groupBoxCanais.Text = "Canais";
+            // 
+            // btnCanalAnterior
+            // 
+            btnCanalAnterior.Location = new Point(116, 164);
+            btnCanalAnterior.Name = "btnCanalAnterior";
+            btnCanalAnterior.Size = new Size(114, 40);
+            btnCanalAnterior.TabIndex = 3;
+            btnCanalAnterior.Text = "Voltar canal ";
+            btnCanalAnterior.TextAlign = ContentAlignment.TopCenter;
+            btnCanalAnterior.TextImageRelation = TextImageRelation.TextAboveImage;
+            btnCanalAnterior.UseVisualStyleBackColor = true;
+            btnCanalAnterior.Click += btnCanalAnterior_Click;
             // 
             // lblCanal
             // 
@@ -127,6 +141,17 @@
             groupBoxVolume.TabStop = false;
             groupBoxVolume.Text = "Volume ";
             // 
+            // btnMute
+            // 
+            btnMute.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnMute.Location = new Point(122, 159);
+            btnMute.Name = "btnMute";
+            btnMute.Size = new Size(82, 40);
+            btnMute.TabIndex = 3;
+            btnMute.Text = "Mute";
+            btnMute.UseVisualStyleBackColor = true;
+            btnMute.Click += btnMute_Click;
+            // 
             // progressBarVolume
             // 
             progressBarVolume.Location = new Point(20, 121);
@@ -160,7 +185,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(819, 28);
+            menuStrip1.Size = new Size(852, 28);
             menuStrip1.TabIndex = 4;
             menuStrip1.Text = "&Nova Box";
             // 
@@ -182,22 +207,11 @@
             lblTotalCanais.Text = "Total de Cais: -";
             lblTotalCanais.Click += lblTotalCanais_Click;
             // 
-            // btnMute
-            // 
-            btnMute.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            btnMute.Location = new Point(122, 159);
-            btnMute.Name = "btnMute";
-            btnMute.Size = new Size(82, 40);
-            btnMute.TabIndex = 3;
-            btnMute.Text = "Mute";
-            btnMute.UseVisualStyleBackColor = true;
-            btnMute.Click += btnMute_Click;
-            // 
             // frmPrincial
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(819, 434);
+            ClientSize = new Size(852, 440);
             Controls.Add(lblTotalCanais);
             Controls.Add(groupBoxVolume);
             Controls.Add(groupBoxCanais);
@@ -233,5 +247,6 @@
         private ToolStripMenuItem toolStripMenuItem1;
         private Label lblTotalCanais;
         private Button btnMute;
+        private Button btnCanalAnterior;
     }
 }

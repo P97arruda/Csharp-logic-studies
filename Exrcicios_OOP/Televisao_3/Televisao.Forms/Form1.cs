@@ -2,8 +2,10 @@ using Televisao.Console;
 
 namespace Televisao.Forms
 {
+
     public partial class frmPrincial : Form
     {
+
         public Box Meo { get; set; }
 
         //Box _meo;
@@ -54,7 +56,7 @@ namespace Televisao.Forms
                 progressBarVolume.Value = 0;
 
                 //Atualizar total de canais 
-                lblTotalCanais.Text = "Total de canais: -"; 
+                lblTotalCanais.Text = "Total de canais: -";
 
             }
             else
@@ -71,7 +73,7 @@ namespace Televisao.Forms
                 progressBarVolume.Value = Meo.Volume;
 
                 //Atualizar Total de canais 
-                AtualizarTotalCanais(Meo.NumeroCanais); 
+                AtualizarTotalCanais(Meo.NumeroCanais);
 
             }
         }
@@ -124,28 +126,19 @@ namespace Televisao.Forms
         {
             Meo.AtivarMute();
 
-            if (Meo.Mute)
-            {
-                // desliga botões de volume
-                btnAumenteVolume.Enabled = false;
-                btndiminuiVolume.Enabled = false;
+            btnAumenteVolume.Enabled = !Meo.Mute;
+            btndiminuiVolume.Enabled = !Meo.Mute;
 
-                // desliga barra de volume
-                progressBarVolume.Value = 0;
+            progressBarVolume.Value = Meo.Volume;
 
-                lblInfo.Text = "Mute ativado";
-            }
-            else
-            {
-                // ativa botões novamente
-                btnAumenteVolume.Enabled = true;
-                btndiminuiVolume.Enabled = true;
+            lblInfo.Text = Meo.Mute ? "Mute ativado" : "Som ligado";
+        }
 
-                // volta volume anterior
-                progressBarVolume.Value = Meo.Volume;
-
-                lblInfo.Text = "Som ligado";
-            }
+        private void btnCanalAnterior_Click(object sender, EventArgs e)
+        {
+            Meo.VoltarCanalAnterior();
+            lblCanal.Text = Meo.Canal.ToString();
         }
     }
+
 }
