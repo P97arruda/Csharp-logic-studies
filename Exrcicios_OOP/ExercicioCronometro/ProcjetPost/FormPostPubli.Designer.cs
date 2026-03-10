@@ -28,90 +28,101 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            lblTitulo = new Label();
+            lblDescricao = new Label();
+            lblLikes = new Label();
+            lblDislikes = new Label();
+            lblData = new Label();
+            btnLikes = new Button();
+            btnDislike = new Button();
             SuspendLayout();
             // 
-            // label1
+            // lblTitulo
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(41, 32);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            lblTitulo.AutoSize = true;
+            lblTitulo.Font = new Font("Segoe UI", 9F);
+            lblTitulo.Location = new Point(41, 32);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(25, 20);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "\" \"";
             // 
-            // label2
+            // lblDescricao
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(41, 105);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 1;
-            label2.Text = "label2";
+            lblDescricao.Font = new Font("Segoe UI", 9F);
+            lblDescricao.Location = new Point(41, 105);
+            lblDescricao.Name = "lblDescricao";
+            lblDescricao.Size = new Size(50, 20);
+            lblDescricao.TabIndex = 1;
+            lblDescricao.Text = "\" \"";
             // 
-            // label3
+            // lblLikes
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(41, 288);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 2;
-            label3.Text = "label3";
+            lblLikes.AutoSize = true;
+            lblLikes.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblLikes.Location = new Point(41, 288);
+            lblLikes.Name = "lblLikes";
+            lblLikes.Size = new Size(91, 28);
+            lblLikes.TabIndex = 2;
+            lblLikes.Text = "Likes - 0";
             // 
-            // label4
+            // lblDislikes
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(176, 288);
-            label4.Name = "label4";
-            label4.Size = new Size(50, 20);
-            label4.TabIndex = 3;
-            label4.Text = "label4";
+            lblDislikes.AutoSize = true;
+            lblDislikes.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblDislikes.Location = new Point(176, 288);
+            lblDislikes.Name = "lblDislikes";
+            lblDislikes.Size = new Size(117, 28);
+            lblDislikes.TabIndex = 3;
+            lblDislikes.Text = "Dislikes - 0";
             // 
-            // label5
+            // lblData
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(29, 406);
-            label5.Name = "label5";
-            label5.Size = new Size(50, 20);
-            label5.TabIndex = 4;
-            label5.Text = "label5";
+            lblData.AutoSize = true;
+            lblData.Font = new Font("Segoe UI", 11F);
+            lblData.Location = new Point(29, 406);
+            lblData.Name = "lblData";
+            lblData.Size = new Size(108, 25);
+            lblData.TabIndex = 4;
+            lblData.Text = "Criado em: ";
             // 
-            // button1
+            // btnLikes
             // 
-            button1.Location = new Point(29, 351);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 5;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnLikes.BackColor = Color.FromArgb(128, 255, 128);
+            btnLikes.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnLikes.Location = new Point(29, 351);
+            btnLikes.Name = "btnLikes";
+            btnLikes.Size = new Size(103, 40);
+            btnLikes.TabIndex = 5;
+            btnLikes.Text = "Like";
+            btnLikes.UseVisualStyleBackColor = false;
+            btnLikes.Click += btnLikes_Click;
             // 
-            // button2
+            // btnDislike
             // 
-            button2.Location = new Point(153, 351);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 6;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btnDislike.BackColor = Color.Red;
+            btnDislike.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnDislike.Location = new Point(176, 351);
+            btnDislike.Name = "btnDislike";
+            btnDislike.Size = new Size(100, 40);
+            btnDislike.TabIndex = 6;
+            btnDislike.Text = "Dislike";
+            btnDislike.UseVisualStyleBackColor = false;
+            btnDislike.Click += btnDislike_Click;
             // 
             // FormPostPubli
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(800, 450);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(btnDislike);
+            Controls.Add(btnLikes);
+            Controls.Add(lblData);
+            Controls.Add(lblDislikes);
+            Controls.Add(lblLikes);
+            Controls.Add(lblDescricao);
+            Controls.Add(lblTitulo);
             Name = "FormPostPubli";
             Text = "FormPostPubli";
             ResumeLayout(false);
@@ -120,12 +131,12 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Button button1;
-        private Button button2;
+        private Label lblTitulo;
+        private Label lblDescricao;
+        private Label lblLikes;
+        private Label lblDislikes;
+        private Label lblData;
+        private Button btnLikes;
+        private Button btnDislike;
     }
 }

@@ -8,18 +8,6 @@ namespace Televisao.Forms
 
         public Box Meo { get; set; }
 
-        //Box _meo;
-        //public Box Meo
-        //{
-        //    get
-        //    {
-        //        return _meo;
-        //    }
-        //    set
-        //    {
-        //        _meo = value;
-        //    }
-        //}
 
         public frmPrincial()
         {

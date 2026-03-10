@@ -53,6 +53,7 @@
             textBoxTituloPost.Name = "textBoxTituloPost";
             textBoxTituloPost.Size = new Size(711, 97);
             textBoxTituloPost.TabIndex = 1;
+            textBoxTituloPost.TextChanged += textBoxTituloPost_TextChanged;
             // 
             // lblDescricao
             // 
@@ -71,6 +72,7 @@
             textBoxDescricao.Name = "textBoxDescricao";
             textBoxDescricao.Size = new Size(711, 181);
             textBoxDescricao.TabIndex = 3;
+          
             // 
             // btnPublicarPost
             // 
@@ -82,6 +84,7 @@
             btnPublicarPost.TabIndex = 4;
             btnPublicarPost.Text = "Publicar Post";
             btnPublicarPost.UseVisualStyleBackColor = false;
+            btnPublicarPost.Click += btnPublicarPost_Click;
             // 
             // btnCancelarPost
             // 
@@ -92,6 +95,7 @@
             btnCancelarPost.TabIndex = 5;
             btnCancelarPost.Text = "Cancelar";
             btnCancelarPost.UseVisualStyleBackColor = true;
+            btnCancelarPost.Click += btnCancelarPost_Click;
             // 
             // FormCriaPost
             // 
