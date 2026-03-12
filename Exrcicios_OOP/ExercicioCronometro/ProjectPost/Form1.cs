@@ -2,7 +2,7 @@
 {
     public partial class Form1 : Form
     {
-        public Post post {  get; set; }
+        public Post PostAtual {  get; set; }
         public Form1()
         {
             InitializeComponent();
@@ -10,12 +10,12 @@
 
         public void AtualizarPost()
         {
-            lblTitulo.Text = post.Titulo;
-            lblDescricao.Text = post.Descricao;
+            lblTitulo.Text = PostAtual.Titulo;
+            lblDescricao.Text = PostAtual.Descricao;
 
-            lblData.Text = "Criado em: " + post.Data.ToString();
-            lblLike.Text = "Likes - " + post.Likes;
-            lblDisLike.Text = "Dislikes - " + post.Dislikes;
+            lblData.Text = "Criado em: " + PostAtual.Data.ToString();
+            lblLike.Text = "Likes - " + PostAtual.Likes;
+            lblDisLike.Text = "Dislikes - " + PostAtual.Dislikes;
 
             btnCriaPost.Enabled = false;
             lblTitulo.Visible = true;
@@ -35,14 +35,14 @@
 
         private void btnLike_Click(object sender, EventArgs e)
         {
-            post.Like();
+            PostAtual.Like();
             AtualizarPost();
 
         }
 
         private void btnDislike_Click(object sender, EventArgs e)
         {
-            post.Dislike();
+            PostAtual.Dislike();
             AtualizarPost();
         }
     }

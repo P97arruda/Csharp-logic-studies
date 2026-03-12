@@ -26,7 +26,7 @@
             }
 
              // _formPrincipal.Meo = novaBox
-            _formPrincipal.post = new Post(textBoxTitulo.Text, textBoxDescricao.Text);
+            _formPrincipal.PostAtual = new Post(textBoxTitulo.Text, textBoxDescricao.Text);
             _formPrincipal.AtualizarPost();
 
             this.Close();
