@@ -87,7 +87,7 @@
             radioButtonRosa.TabStop = true;
             radioButtonRosa.Text = "Rosa";
             radioButtonRosa.UseVisualStyleBackColor = false;
-            radioButtonRosa.CheckedChanged += radioButton4_CheckedChanged;
+        
             // 
             // radioButtonVermelho
             // 
