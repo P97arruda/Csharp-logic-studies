@@ -39,18 +39,21 @@
             lblDirecaoAltural = new Label();
             lblAtitudeAtual = new Label();
             btnAlterarCor = new Button();
-            groupBox2 = new GroupBox();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton3 = new RadioButton();
-            radioButton4 = new RadioButton();
-            radioButton5 = new RadioButton();
-            radioButton6 = new RadioButton();
-            button1 = new Button();
-            button2 = new Button();
+            groupBox = new GroupBox();
+            btnGrupBoxCancelar = new Button();
+            btnGrupBoxIniciar = new Button();
+            radioButtonRosa = new RadioButton();
+            radioButtonVermelho = new RadioButton();
+            radioButtonAmarelo = new RadioButton();
+            radioButtonRainbow = new RadioButton();
+            radioButtonVerde = new RadioButton();
+            radioButtonAzul = new RadioButton();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
-            groupBox2.SuspendLayout();
+            groupBox.SuspendLayout();
             SuspendLayout();
             // 
             // btnIniciaBalao
@@ -131,33 +134,33 @@
             // lblCorAtual
             // 
             lblCorAtual.AutoSize = true;
-            lblCorAtual.BackColor = Color.FromArgb(255, 192, 192);
-            lblCorAtual.Location = new Point(957, 281);
+            lblCorAtual.BackColor = Color.White;
+            lblCorAtual.Location = new Point(969, 313);
             lblCorAtual.Name = "lblCorAtual";
-            lblCorAtual.Size = new Size(71, 20);
+            lblCorAtual.Size = new Size(29, 20);
             lblCorAtual.TabIndex = 8;
-            lblCorAtual.Text = "Cor Atual";
+            lblCorAtual.Text = "\"  \"";
             lblCorAtual.Click += lblCorAtual_Click;
             // 
             // lblDirecaoAltural
             // 
             lblDirecaoAltural.AutoSize = true;
-            lblDirecaoAltural.BackColor = Color.FromArgb(255, 192, 192);
-            lblDirecaoAltural.Location = new Point(938, 342);
+            lblDirecaoAltural.BackColor = Color.WhiteSmoke;
+            lblDirecaoAltural.Location = new Point(969, 372);
             lblDirecaoAltural.Name = "lblDirecaoAltural";
-            lblDirecaoAltural.Size = new Size(100, 20);
+            lblDirecaoAltural.Size = new Size(25, 20);
             lblDirecaoAltural.TabIndex = 9;
-            lblDirecaoAltural.Text = "Direção Atual";
+            lblDirecaoAltural.Text = "\" \"";
             // 
             // lblAtitudeAtual
             // 
             lblAtitudeAtual.AutoSize = true;
-            lblAtitudeAtual.BackColor = Color.FromArgb(255, 192, 192);
-            lblAtitudeAtual.Location = new Point(941, 395);
+            lblAtitudeAtual.BackColor = Color.WhiteSmoke;
+            lblAtitudeAtual.Location = new Point(969, 443);
             lblAtitudeAtual.Name = "lblAtitudeAtual";
-            lblAtitudeAtual.Size = new Size(97, 20);
+            lblAtitudeAtual.Size = new Size(25, 20);
             lblAtitudeAtual.TabIndex = 10;
-            lblAtitudeAtual.Text = "Atitude Atual";
+            lblAtitudeAtual.Text = "\" \"";
             // 
             // btnAlterarCor
             // 
@@ -167,114 +170,156 @@
             btnAlterarCor.TabIndex = 11;
             btnAlterarCor.Text = "Alterar Cor";
             btnAlterarCor.UseVisualStyleBackColor = true;
+            btnAlterarCor.Click += btnAlterarCor_Click;
             // 
-            // groupBox2
+            // groupBox
             // 
-            groupBox2.Controls.Add(button2);
-            groupBox2.Controls.Add(button1);
-            groupBox2.Controls.Add(radioButton6);
-            groupBox2.Controls.Add(radioButton5);
-            groupBox2.Controls.Add(radioButton4);
-            groupBox2.Controls.Add(radioButton3);
-            groupBox2.Controls.Add(radioButton2);
-            groupBox2.Controls.Add(radioButton1);
-            groupBox2.Location = new Point(47, 40);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(509, 241);
-            groupBox2.TabIndex = 12;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "groupBox2";
+            groupBox.Controls.Add(btnGrupBoxCancelar);
+            groupBox.Controls.Add(btnGrupBoxIniciar);
+            groupBox.Controls.Add(radioButtonRosa);
+            groupBox.Controls.Add(radioButtonVermelho);
+            groupBox.Controls.Add(radioButtonAmarelo);
+            groupBox.Controls.Add(radioButtonRainbow);
+            groupBox.Controls.Add(radioButtonVerde);
+            groupBox.Controls.Add(radioButtonAzul);
+            groupBox.Location = new Point(47, 40);
+            groupBox.Name = "groupBox";
+            groupBox.Size = new Size(509, 241);
+            groupBox.TabIndex = 12;
+            groupBox.TabStop = false;
+            groupBox.Text = "Escolher a cor do Balão";
             // 
-            // radioButton1
+            // btnGrupBoxCancelar
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(59, 41);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(117, 24);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "radioButton1";
-            radioButton1.UseVisualStyleBackColor = true;
+            btnGrupBoxCancelar.Location = new Point(266, 195);
+            btnGrupBoxCancelar.Name = "btnGrupBoxCancelar";
+            btnGrupBoxCancelar.Size = new Size(94, 29);
+            btnGrupBoxCancelar.TabIndex = 7;
+            btnGrupBoxCancelar.Text = "Cancelar";
+            btnGrupBoxCancelar.UseVisualStyleBackColor = true;
+            btnGrupBoxCancelar.Click += btnGrupBoxCancelar_Click;
             // 
-            // radioButton2
+            // btnGrupBoxIniciar
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(205, 41);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(117, 24);
-            radioButton2.TabIndex = 1;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "radioButton2";
-            radioButton2.UseVisualStyleBackColor = true;
+            btnGrupBoxIniciar.BackColor = Color.FromArgb(0, 192, 192);
+            btnGrupBoxIniciar.Location = new Point(389, 195);
+            btnGrupBoxIniciar.Name = "btnGrupBoxIniciar";
+            btnGrupBoxIniciar.Size = new Size(94, 29);
+            btnGrupBoxIniciar.TabIndex = 6;
+            btnGrupBoxIniciar.Text = "Iniciar";
+            btnGrupBoxIniciar.UseVisualStyleBackColor = false;
+            btnGrupBoxIniciar.Click += btnGrupBoxIniciar_Click;
             // 
-            // radioButton3
+            // radioButtonRosa
             // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(358, 41);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(117, 24);
-            radioButton3.TabIndex = 2;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "radioButton3";
-            radioButton3.UseVisualStyleBackColor = true;
+            radioButtonRosa.AutoSize = true;
+            radioButtonRosa.BackColor = Color.FromArgb(255, 128, 255);
+            radioButtonRosa.Location = new Point(358, 80);
+            radioButtonRosa.Name = "radioButtonRosa";
+            radioButtonRosa.Size = new Size(62, 24);
+            radioButtonRosa.TabIndex = 5;
+            radioButtonRosa.TabStop = true;
+            radioButtonRosa.Text = "Rosa";
+            radioButtonRosa.UseVisualStyleBackColor = false;
             // 
-            // radioButton4
+            // radioButtonVermelho
             // 
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(59, 77);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(117, 24);
-            radioButton4.TabIndex = 3;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "radioButton4";
-            radioButton4.UseVisualStyleBackColor = true;
+            radioButtonVermelho.AutoSize = true;
+            radioButtonVermelho.BackColor = Color.Red;
+            radioButtonVermelho.Location = new Point(208, 80);
+            radioButtonVermelho.Name = "radioButtonVermelho";
+            radioButtonVermelho.Size = new Size(93, 24);
+            radioButtonVermelho.TabIndex = 4;
+            radioButtonVermelho.TabStop = true;
+            radioButtonVermelho.Text = "Vermelho";
+            radioButtonVermelho.UseVisualStyleBackColor = false;
             // 
-            // radioButton5
+            // radioButtonAmarelo
             // 
-            radioButton5.AutoSize = true;
-            radioButton5.Location = new Point(208, 80);
-            radioButton5.Name = "radioButton5";
-            radioButton5.Size = new Size(117, 24);
-            radioButton5.TabIndex = 4;
-            radioButton5.TabStop = true;
-            radioButton5.Text = "radioButton5";
-            radioButton5.UseVisualStyleBackColor = true;
+            radioButtonAmarelo.AutoSize = true;
+            radioButtonAmarelo.BackColor = Color.FromArgb(255, 255, 128);
+            radioButtonAmarelo.Location = new Point(59, 77);
+            radioButtonAmarelo.Name = "radioButtonAmarelo";
+            radioButtonAmarelo.Size = new Size(87, 24);
+            radioButtonAmarelo.TabIndex = 3;
+            radioButtonAmarelo.TabStop = true;
+            radioButtonAmarelo.Text = "Amarelo";
+            radioButtonAmarelo.UseVisualStyleBackColor = false;
             // 
-            // radioButton6
+            // radioButtonRainbow
             // 
-            radioButton6.AutoSize = true;
-            radioButton6.Location = new Point(358, 80);
-            radioButton6.Name = "radioButton6";
-            radioButton6.Size = new Size(117, 24);
-            radioButton6.TabIndex = 5;
-            radioButton6.TabStop = true;
-            radioButton6.Text = "radioButton6";
-            radioButton6.UseVisualStyleBackColor = true;
+            radioButtonRainbow.AutoSize = true;
+            radioButtonRainbow.Location = new Point(358, 41);
+            radioButtonRainbow.Name = "radioButtonRainbow";
+            radioButtonRainbow.Size = new Size(88, 24);
+            radioButtonRainbow.TabIndex = 2;
+            radioButtonRainbow.TabStop = true;
+            radioButtonRainbow.Text = "Rainbow";
+            radioButtonRainbow.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // radioButtonVerde
             // 
-            button1.Location = new Point(400, 195);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 6;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            radioButtonVerde.AutoSize = true;
+            radioButtonVerde.BackColor = Color.FromArgb(128, 255, 128);
+            radioButtonVerde.Location = new Point(205, 41);
+            radioButtonVerde.Name = "radioButtonVerde";
+            radioButtonVerde.Size = new Size(68, 24);
+            radioButtonVerde.TabIndex = 1;
+            radioButtonVerde.TabStop = true;
+            radioButtonVerde.Text = "Verde";
+            radioButtonVerde.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // radioButtonAzul
             // 
-            button2.Location = new Point(300, 195);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 7;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            radioButtonAzul.AutoSize = true;
+            radioButtonAzul.BackColor = SystemColors.Highlight;
+            radioButtonAzul.Location = new Point(59, 41);
+            radioButtonAzul.Name = "radioButtonAzul";
+            radioButtonAzul.Size = new Size(59, 24);
+            radioButtonAzul.TabIndex = 0;
+            radioButtonAzul.TabStop = true;
+            radioButtonAzul.Text = "Azul";
+            radioButtonAzul.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(255, 192, 192);
+            label1.Location = new Point(957, 278);
+            label1.Name = "label1";
+            label1.Size = new Size(71, 20);
+            label1.TabIndex = 13;
+            label1.Text = "Cor Atual";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(255, 192, 192);
+            label2.Location = new Point(957, 352);
+            label2.Name = "label2";
+            label2.Size = new Size(101, 20);
+            label2.TabIndex = 14;
+            label2.Text = "Direçõo Atual";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(255, 192, 192);
+            label3.Location = new Point(957, 423);
+            label3.Name = "label3";
+            label3.Size = new Size(97, 20);
+            label3.TabIndex = 15;
+            label3.Text = "Atitude Atual";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1091, 649);
-            Controls.Add(groupBox2);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(groupBox);
             Controls.Add(btnAlterarCor);
             Controls.Add(lblAtitudeAtual);
             Controls.Add(lblDirecaoAltural);
@@ -290,23 +335,17 @@
             Text = "Balão";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
+            groupBox.ResumeLayout(false);
+            groupBox.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private RadioButton radioButtonRosa;
-        private RadioButton radioButtonRainbow;
-        private RadioButton radioButtonVermelho;
-        private RadioButton radioButtonVerde;
-        private RadioButton radioButtonAmarelo;
-        private RadioButton radioButtonAzul;
-        private Button btnIniciar;
-        private Button btnCancelar;
+        #region 
+
+
         private Button btnIniciaBalao;
         private PictureBox pictureBox1;
         private NumericUpDown numericUpDown1;
@@ -318,14 +357,25 @@
         private Label lblDirecaoAltural;
         private Label lblAtitudeAtual;
         private Button btnAlterarCor;
-        private GroupBox groupBox2;
-        private RadioButton radioButton3;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
-        private Button button2;
-        private Button button1;
-        private RadioButton radioButton6;
-        private RadioButton radioButton5;
-        private RadioButton radioButton4;
+
+        private GroupBox groupBox;
+        private Button btnGrupBoxCancelar;
+        private Button btnGrupBoxIniciar;
+
+        private RadioButton radioButtonRosa;
+        private RadioButton radioButtonRainbow;
+        private RadioButton radioButtonVermelho;
+        private RadioButton radioButtonVerde;
+        private RadioButton radioButtonAmarelo;
+        private RadioButton radioButtonAzul;
+
+        #endregion
+
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
+
+
+
 }
