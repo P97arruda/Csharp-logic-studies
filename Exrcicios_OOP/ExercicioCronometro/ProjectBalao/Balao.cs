@@ -21,6 +21,10 @@
             {
                 return _cor;
             }
+            set
+            {
+                _cor = value;
+            }
         }
 
         public string Direcao
@@ -28,6 +32,10 @@
             get
             {
                 return _direcao;
+            }
+            set
+            {
+                _direcao = value;
             }
         }
 
@@ -49,17 +57,6 @@
             _direcao = "Parado";
             _altura = 0;
         }
-
-        public void MudarCor(string cor)
-        {
-            _cor = cor;
-        }
-
-        public void MudarDirecao(string direcao)
-        {
-            _direcao = direcao;
-        }
-
         public void Subir(int metros)
         {
             _altura += metros;

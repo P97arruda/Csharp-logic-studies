@@ -8,7 +8,7 @@ namespace ProjectBalao
         {
             InitializeComponent();
             MostrarGroupBox(true);
-            btnIniciaBalao.Enabled = false;// no início mostra o groupBox
+            btnIniciaBalao.Enabled = false;
         }
 
         private void MostrarGroupBox(bool mostrar)
@@ -30,39 +30,41 @@ namespace ProjectBalao
         public void AtualizarBalao()
         {
 
-            if (Balao == null) return;
-
-            switch (Balao.Cor)
+            if (Balao != null)
             {
-                case "Azul":
-                    pictureBox1.Image = Properties.Resources.Azul;
-                    break;
-                case "Amarelo":
-                    pictureBox1.Image = Properties.Resources.Amarelo;
-                    break;
-                case "Verde":
-                    pictureBox1.Image = Properties.Resources.Verde;
-                    break;
-                case "Vermelho":
-                    pictureBox1.Image = Properties.Resources.Vermelho;
-                    break;
-                case "Rainbow":
-                    pictureBox1.Image = Properties.Resources.Rainbow;
-                    break;
-                case "Rosa":
-                    pictureBox1.Image = Properties.Resources.Rosa;
-                    break;
+                switch (Balao.Cor)
+                {
+                    case "Azul":
+                        pictureBox1.Image = Properties.Resources.Azul;
+                        break;
+                    case "Amarelo":
+                        pictureBox1.Image = Properties.Resources.Amarelo;
+                        break;
+                    case "Verde":
+                        pictureBox1.Image = Properties.Resources.Verde;
+                        break;
+                    case "Vermelho":
+                        pictureBox1.Image = Properties.Resources.Vermelho;
+                        break;
+                    case "Rainbow":
+                        pictureBox1.Image = Properties.Resources.Rainbow;
+                        break;
+                    case "Rosa":
+                        pictureBox1.Image = Properties.Resources.Rosa;
+                        break;
+                }
+
+                lblCorAtual.Text = Balao.Cor;
+                lblDirecaoAltural.Text = Balao.Direcao;
+                lblAtitudeAtual.Text = Balao.Altura.ToString();
+
+                MoverBalao();
             }
-
-            lblCorAtual.Text = Balao.Cor;
-            lblDirecaoAltural.Text = Balao.Direcao;
-            lblAtitudeAtual.Text = Balao.Altura.ToString();
-
-            MoverBalao();
         }
 
-          
-        
+
+
+
 
         private void btnIniciaBalao_Click(object sender, EventArgs e)
         {
@@ -81,7 +83,7 @@ namespace ProjectBalao
         {
             if (Balao == null) return;
             Balao.Descer((int)numericUpDown1.Value);
-            Balao.MudarDirecao("Baixo");
+            Balao.Direcao = "Baixo"; // ? mudou
             AtualizarBalao();
 
         }
@@ -94,21 +96,22 @@ namespace ProjectBalao
         private void btnEsquerda_Click(object sender, EventArgs e)
         {
             if (Balao == null) return;
-            Balao.MudarDirecao("Esquerda");
+            Balao.Direcao = "Esquerda"; // ? mudou
             AtualizarBalao();
         }
 
         private void btnDireita_Click(object sender, EventArgs e)
         {
             if (Balao == null) return;
-            Balao.MudarDirecao("Direita"); 
+            Balao.Direcao = "Direita"; // ? mudou
             AtualizarBalao();
         }
 
         private void btnCima_Click(object sender, EventArgs e)
         {
+            if (Balao == null) return;
             Balao.Subir((int)numericUpDown1.Value);
-            Balao.MudarDirecao("Cima");
+            Balao.Direcao = "Cima"; // ? mudou
             AtualizarBalao();
         }
 
@@ -174,13 +177,12 @@ namespace ProjectBalao
 
         private void btnAlterarCor_Click(object sender, EventArgs e)
         {
-            MostrarGroupBox(true); // mostra o groupBox
+            MostrarGroupBox(true);
         }
-
         private void btnGrupBoxCancelar_Click(object sender, EventArgs e)
         {
             if (Balao != null)
-                MostrarGroupBox(false); // esconde se já existe balão
+                MostrarGroupBox(false);
         }
     }
 }
