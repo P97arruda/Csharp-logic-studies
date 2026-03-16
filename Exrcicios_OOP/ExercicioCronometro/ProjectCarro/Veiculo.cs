@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProjectCarro
+﻿namespace ProjectCarro
 {
     public class Veiculo
     {
@@ -83,25 +77,25 @@ namespace ProjectCarro
             _viagens = 0;
         }
 
-        // Calcula quantos km pode percorrer com o combustível atual
+
         public double KmDisponiveis()
         {
             return (_litrosAtuais / _consumoMedio) * 100;
         }
 
-        //Verifica se esta na reserva (menos de 10 litros)
+
         public bool EstaNaReserva()
         {
             return _litrosAtuais <= 10;
         }
 
-        // Registra um viagem 
+
         public bool Viajar(double km)
         {
 
             double litrosNecessarios = (km * _consumoMedio) / 100;
 
-            if(litrosNecessarios > _litrosAtuais)
+            if (litrosNecessarios > _litrosAtuais)
             {
                 return false;
             }
@@ -109,7 +103,7 @@ namespace ProjectCarro
             _litrosAtuais -= litrosNecessarios;
             _quilometragem += km;
             _viagens++;
-            
+
             return true;
         }
 
@@ -117,7 +111,7 @@ namespace ProjectCarro
         {
             double espacoDisponivel = _capacidade - _litrosAtuais;
 
-            if(litros > espacoDisponivel)
+            if (litros > espacoDisponivel)
                 litros = espacoDisponivel;
 
             _litrosAtuais += litros;

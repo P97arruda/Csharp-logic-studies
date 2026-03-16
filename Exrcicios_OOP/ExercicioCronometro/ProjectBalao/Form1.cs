@@ -83,7 +83,7 @@ namespace ProjectBalao
         {
             if (Balao == null) return;
             Balao.Descer((int)numericUpDown1.Value);
-            Balao.Direcao = "Baixo"; // ? mudou
+            Balao.Direcao = "Baixo"; 
             AtualizarBalao();
 
         }
@@ -96,14 +96,14 @@ namespace ProjectBalao
         private void btnEsquerda_Click(object sender, EventArgs e)
         {
             if (Balao == null) return;
-            Balao.Direcao = "Esquerda"; // ? mudou
+            Balao.Direcao = "Esquerda"; 
             AtualizarBalao();
         }
 
         private void btnDireita_Click(object sender, EventArgs e)
         {
             if (Balao == null) return;
-            Balao.Direcao = "Direita"; // ? mudou
+            Balao.Direcao = "Direita"; 
             AtualizarBalao();
         }
 
@@ -111,7 +111,7 @@ namespace ProjectBalao
         {
             if (Balao == null) return;
             Balao.Subir((int)numericUpDown1.Value);
-            Balao.Direcao = "Cima"; // ? mudou
+            Balao.Direcao = "Cima"; 
             AtualizarBalao();
         }
 

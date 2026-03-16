@@ -12,7 +12,17 @@ namespace Ex_3
 
         static void Main(string[] args)
         {
-            Retangulo r = new Retangulo();
+            Retangulo ret = new Retangulo();
+
+            Console.WriteLine("Entre a largura e a altura do retâgulo: ");
+            ret.Largura = double.Parse(Console.ReadLine());
+            ret.Altura = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Area" + ret.Area());
+
+
+
+
         }
     }
 }
