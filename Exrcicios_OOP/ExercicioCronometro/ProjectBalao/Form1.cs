@@ -10,7 +10,6 @@ namespace ProjectBalao
             MostrarGroupBox(true);
             btnIniciaBalao.Enabled = false;
         }
-
         private void MostrarGroupBox(bool mostrar)
         {
             groupBox.Visible = mostrar;
