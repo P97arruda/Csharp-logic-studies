@@ -60,11 +60,6 @@ namespace ProjectBalao
                 MoverBalao();
             }
         }
-
-
-
-
-
         private void btnIniciaBalao_Click(object sender, EventArgs e)
         {
             if (Balao == null)
