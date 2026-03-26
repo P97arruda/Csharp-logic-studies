@@ -2,14 +2,18 @@ namespace ProjectBalao
 {
     public partial class Form1 : Form
     {
+        // Balão atualmente controlado pelo formulário
         public Balao Balao { get; set; }
 
+        // Construtor: inicializa o formulário e mostra o painel de seleção de cor
         public Form1()
         {
             InitializeComponent();
             MostrarGroupBox(true);
             btnIniciaBalao.Enabled = false;
         }
+
+        // Mostra ou esconde o painel de configuração e os controlos do balão
         private void MostrarGroupBox(bool mostrar)
         {
             groupBox.Visible = mostrar;
@@ -26,9 +30,10 @@ namespace ProjectBalao
             numericUpDown1.Enabled = !mostrar;
         }
 
+        // Atualiza a imagem, os labels e move o balão conforme o estado atual
         public void AtualizarBalao()
         {
-
+            // Atualiza a imagem consoante a cor do balão
             if (Balao != null)
             {
                 switch (Balao.Cor)
@@ -60,6 +65,8 @@ namespace ProjectBalao
                 MoverBalao();
             }
         }
+
+        // Inicia o balão e esconde o painel de configuração
         private void btnIniciaBalao_Click(object sender, EventArgs e)
         {
             if (Balao == null)
@@ -73,6 +80,7 @@ namespace ProjectBalao
             MostrarGroupBox(false);
         }
 
+        // Desce o balão o número de metros indicado e atualiza a interface
         private void btnBaixo_Click(object sender, EventArgs e)
         {
             if (Balao == null) return;
@@ -87,6 +95,7 @@ namespace ProjectBalao
 
         }
 
+        // Move o balão para a esquerda e atualiza a interface
         private void btnEsquerda_Click(object sender, EventArgs e)
         {
             if (Balao == null) return;
@@ -94,6 +103,7 @@ namespace ProjectBalao
             AtualizarBalao();
         }
 
+        // Move o balão para a direita e atualiza a interface
         private void btnDireita_Click(object sender, EventArgs e)
         {
             if (Balao == null) return;
@@ -101,6 +111,7 @@ namespace ProjectBalao
             AtualizarBalao();
         }
 
+        // Sobe o balão o número de metros indicado e atualiza a interface
         private void btnCima_Click(object sender, EventArgs e)
         {
             if (Balao == null) return;
@@ -109,6 +120,7 @@ namespace ProjectBalao
             AtualizarBalao();
         }
 
+        // Lê a cor selecionada, valida a escolha e cria o balão
         private void btnGrupBoxIniciar_Click(object sender, EventArgs e)
         {
             string corEscolhida = string.Empty;
@@ -138,6 +150,7 @@ namespace ProjectBalao
                 corEscolhida = "Rosa";
             }
 
+            // Validação: cor obrigatória
             if (string.IsNullOrEmpty(corEscolhida))
             {
                 MessageBox.Show("Tens que escolher uma cor!", "Faltam dados",
@@ -150,6 +163,7 @@ namespace ProjectBalao
             btnIniciaBalao.Enabled = true;
         }
 
+        // Move a imagem do balão no ecrã consoante a direção atual
         private void MoverBalao()
         {
             switch (Balao.Direcao)
@@ -169,10 +183,12 @@ namespace ProjectBalao
             }
         }
 
+        // Abre o painel de configuração para alterar a cor do balão
         private void btnAlterarCor_Click(object sender, EventArgs e)
         {
             MostrarGroupBox(true);
         }
+        // Fecha o painel de configuração sem alterar o balão atual
         private void btnGrupBoxCancelar_Click(object sender, EventArgs e)
         {
             if (Balao != null)
