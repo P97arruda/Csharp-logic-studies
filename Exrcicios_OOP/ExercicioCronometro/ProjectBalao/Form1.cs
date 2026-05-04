@@ -85,7 +85,7 @@ namespace ProjectBalao
         {
             if (Balao == null) return;
             Balao.Descer((int)numericUpDown1.Value);
-            Balao.Direcao = "Baixo"; 
+            Balao.Direcao = "Baixo";
             AtualizarBalao();
 
         }
@@ -99,7 +99,7 @@ namespace ProjectBalao
         private void btnEsquerda_Click(object sender, EventArgs e)
         {
             if (Balao == null) return;
-            Balao.Direcao = "Esquerda"; 
+            Balao.Direcao = "Esquerda";
             AtualizarBalao();
         }
 
@@ -107,7 +107,7 @@ namespace ProjectBalao
         private void btnDireita_Click(object sender, EventArgs e)
         {
             if (Balao == null) return;
-            Balao.Direcao = "Direita"; 
+            Balao.Direcao = "Direita";
             AtualizarBalao();
         }
 
@@ -116,7 +116,7 @@ namespace ProjectBalao
         {
             if (Balao == null) return;
             Balao.Subir((int)numericUpDown1.Value);
-            Balao.Direcao = "Cima"; 
+            Balao.Direcao = "Cima";
             AtualizarBalao();
         }
 
@@ -193,6 +193,11 @@ namespace ProjectBalao
         {
             if (Balao != null)
                 MostrarGroupBox(false);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

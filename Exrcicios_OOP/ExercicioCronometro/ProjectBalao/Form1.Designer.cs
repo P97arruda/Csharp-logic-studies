@@ -333,6 +333,7 @@
             Controls.Add(btnIniciaBalao);
             Name = "Form1";
             Text = "Balão";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             groupBox.ResumeLayout(false);

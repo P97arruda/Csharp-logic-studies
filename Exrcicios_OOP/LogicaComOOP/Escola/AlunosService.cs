@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Channels;
-using System.Threading.Tasks;
-
-namespace Escola
+﻿namespace Escola
 {
     internal class AlunosService
     {
@@ -37,7 +30,7 @@ namespace Escola
 
             Alunos aluno = alunos.Find(c => c.Id == id);
 
-            if(aluno != null)
+            if (aluno != null)
             {
                 alunos.Remove(aluno);
                 Console.WriteLine("Removido");
@@ -53,8 +46,8 @@ namespace Escola
 
         public void ListarAlunos()
         {
-            foreach (var c in alunos) 
-            { 
+            foreach (var c in alunos)
+            {
                 Console.WriteLine($"Id: {c.Id} - Nome: {c.NomeCompleto}");
             }
         }
@@ -65,9 +58,9 @@ namespace Escola
             Console.WriteLine("insira o Id: ");
             int id = int.Parse(Console.ReadLine());
 
-            Alunos aluno = alunos.Find(c => c.Id == id);    
+            Alunos aluno = alunos.Find(c => c.Id == id);
 
-            if(alunos != null)
+            if (alunos != null)
             {
                 Console.Write("Novo Nome: ");
                 aluno.Nome = Console.ReadLine();
