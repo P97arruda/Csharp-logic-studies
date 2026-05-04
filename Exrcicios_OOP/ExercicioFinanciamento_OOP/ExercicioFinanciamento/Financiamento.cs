@@ -8,12 +8,30 @@ namespace ExercicioFinanciamento
 {
     internal class Financiamento
     {
-      public double montante {  get; set; }
+        private int _prazoDePagamento;
 
+        public double Montante {  get; set; }
 
+        public double TaxaDeJuros { get; set; }
 
+        public int PrazoDePagamento
+        {
+            get
+            {
+                return _prazoDePagamento;
+            }
+            set
+            {
+                if (value >= 1 && value <= 60)
+                {
+                    _prazoDePagamento = value;
+                }
+                else
+                {
+                    _prazoDePagamento = 1;
+                }
 
-
-
+            }
+        }
     }
 }
