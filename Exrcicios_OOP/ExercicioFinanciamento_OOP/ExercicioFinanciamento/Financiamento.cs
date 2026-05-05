@@ -1,37 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ExercicioFinanciamento
 {
-    internal class Financiamento
+    public abstract class Financiamento
     {
-        private int _prazoDePagamento;
+        public double MontanteAFinacia {  get; set; }
+        public virtual int PrazoDePagamento { get; set; }
+        public double TaxaDeJurosAnual { get; set; }
 
-        public double Montante {  get; set; }
-
-        public double TaxaDeJuros { get; set; }
-
-        public int PrazoDePagamento
+        public Financiamento(double montateFinanciado, int prazoPagamento, double taxaDejurosAnual)
         {
-            get
-            {
-                return _prazoDePagamento;
-            }
-            set
-            {
-                if (value >= 1 && value <= 60)
-                {
-                    _prazoDePagamento = value;
-                }
-                else
-                {
-                    _prazoDePagamento = 1;
-                }
-
-            }
+            PrazoDePagamento = prazoPagamento;
+            MontanteAFinacia = montateFinanciado;
+            TaxaDeJurosAnual = taxaDejurosAnual;
         }
+
+        public override string ToString()
+        {
+            return $"Montante financiado: {MontanteAFinacia} ,Prazo de pagamento: {PrazoDePagamento} ,Taxa de juros anual: {TaxaDeJurosAnual}%";
+        }
+
+        public abstract double TotalDoFinanciamento();
     }
 }
