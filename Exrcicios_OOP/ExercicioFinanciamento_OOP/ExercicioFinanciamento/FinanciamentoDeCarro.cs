@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ExercicioFinanciamento
+﻿namespace ExercicioFinanciamento
 {
     public class FinanciamentoDeCarro : Financiamento
     {
         private int _prazoDePagamento;
 
-        public double ComissaoDeAbertura {  get; set; }
+        public double ComissaoDeAbertura { get; set; }
 
-        public double ValorResidual {  get; set; }
+        public double ValorResidual { get; set; }
 
 
         public int PrazoDePagamento
@@ -36,18 +30,24 @@ namespace ExercicioFinanciamento
         }
 
         public FinanciamentoDeCarro(double montanteFinanciado, int prazoDePagamento, double taxaDejurosAnual)
-            :base(montanteFinanciado, prazoDePagamento, taxaDejurosAnual)
+            : base(montanteFinanciado, prazoDePagamento, taxaDejurosAnual)
         {
             PrazoDePagamento = prazoDePagamento;
-            ComissaoDeAbertura = 0.01;
-            ValorResidual = 1;
+            ComissaoDeAbertura = 0.0001;
+            ValorResidual = 0.01;
         }
         public override double TotalDoFinanciamento()
         {
-            double juros = MontanteAFinacia * (TaxaDeJurosAnual / 100) * (PrazoDePagamento / 12.0);
+            double juros = MontanteAFinacia * (TaxaDeJurosAnual / 100) * (PrazoDePagamento / 12);
             double comissao = MontanteAFinacia * (ComissaoDeAbertura / 100);
             double residual = MontanteAFinacia * (ValorResidual / 100);
             return MontanteAFinacia + juros + comissao + residual;
         }
+
+        public override string ToString()
+        {
+            return $"Financiamento do Carro --> {base.ToString()} Montate: {TotalDoFinanciamento():C0}";
+        }
+
     }
 }

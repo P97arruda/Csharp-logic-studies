@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ExercicioFinanciamento
+﻿namespace ExercicioFinanciamento
 {
     public abstract class Financiamento
     {
-        public double MontanteAFinacia {  get; set; }
+        public double MontanteAFinacia { get; set; }
         public virtual int PrazoDePagamento { get; set; }
         public double TaxaDeJurosAnual { get; set; }
 
-        public Financiamento(double montateFinanciado, int prazoPagamento, double taxaDejurosAnual)
+        public Financiamento(double montateFinanciado, int prazoDePagamento, double taxaDejurosAnual)
         {
-            PrazoDePagamento = prazoPagamento;
+            PrazoDePagamento = prazoDePagamento;
             MontanteAFinacia = montateFinanciado;
             TaxaDeJurosAnual = taxaDejurosAnual;
         }
