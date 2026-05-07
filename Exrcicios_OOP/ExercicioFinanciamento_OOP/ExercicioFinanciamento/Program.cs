@@ -11,7 +11,13 @@
             Console.WriteLine();
             Console.WriteLine();
 
-            Fiador fiador = new Fiador("João Silva", "Rua das Flores 10", 912345678, 123456789, 25000);
+            Fiador  fiador = new Fiador();
+            fiador.Nome = "João Silva";
+            fiador.Morada = "Rua das Flores 10";
+            fiador.Telefone = "912345678";
+            fiador.Nif = "123456789";
+            fiador.RendimentoBrutoAnual = 25000;
+            
             FinanciamentoDeCasa casa = new FinanciamentoDeCasa(150000, 360, 3.5, fiador);
             Console.WriteLine(casa.ToString());
 
@@ -20,8 +26,7 @@
             OutrosFinanciamento outrosfinaciamento = new OutrosFinanciamento(101000, 32, 3);
             Console.WriteLine(outrosfinaciamento.ToString());
 
-            Console.WriteLine();
-            Console.WriteLine(fiador.ToString());
+            
         }
     }
 }

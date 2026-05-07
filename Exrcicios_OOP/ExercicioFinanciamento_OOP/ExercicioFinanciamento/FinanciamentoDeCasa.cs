@@ -21,7 +21,7 @@
 
         public override string ToString()
         {
-            return $"Financiamento da Casa --> {base.ToString()} Montate: {TotalDoFinanciamento():C0}";
+            return $"Financiamento da Casa --> {base.ToString()} Total: {TotalDoFinanciamento():C0}  {Fiador.ToString()}";
         }
     }
 }
