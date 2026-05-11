@@ -48,6 +48,5 @@
         {
             return $"Financiamento do Carro --> {base.ToString()} Montate: {TotalDoFinanciamento():C0}";
         }
-
     }
 }
