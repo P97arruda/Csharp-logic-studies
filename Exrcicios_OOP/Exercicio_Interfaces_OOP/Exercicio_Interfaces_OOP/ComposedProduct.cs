@@ -8,33 +8,24 @@ namespace Exercicio_Interfaces_OOP
 {
     public class ComposedProduct : Product
     {
-        private readonly float _discount;
-        private readonly List<Product> _products;
-
+        public float Discount { get; set; }
         public List<Product> Products { get; set; }
 
-
-
-        public ComposedProduct(string description, string id, double price, double tax) 
-            : base(description, id, price, tax)
-        {
-            _discount = _discount;
-            _products = _products;
-        }
+        
         
         public  override double ValueToPay()
         {
             double total = 0;
-            foreach (Product p in _products)
+            foreach (Product produt in Products)
             {
-                total += p.ValueToPay();
+                total = total + produt.ValueToPay();
             }
-            return total - (total * _discount);
+            return total - (total * Discount);
         }
 
         public override string ToString() 
         {
-            return $"Produto Composto -> {base.ToString()} | Desconto: {_discount:P0} | Total: {ValueToPay():C2}";
+            return $"Produto Composto: {base.ToString()}  Desconto: {Discount:P0}  Total: {ValueToPay():C2}";
         }
     }
 }

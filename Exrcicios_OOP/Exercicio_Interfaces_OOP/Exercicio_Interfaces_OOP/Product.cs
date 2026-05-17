@@ -12,21 +12,11 @@ namespace Exercicio_Interfaces_OOP
     {
         public string Description { get; set; }
 
-        public string Id { get; set; }
+        public int Id { get; set; }
 
-        public double Price { get; set; }
+        public decimal Price { get; set; }
 
-        public double Tax { get; set; }
-
-
-        protected Product(string description, string id, double price, double tax)
-        {
-            Description = description;
-            Id = id;
-            Price = price;
-            Tax = tax;
-        }
-
+        public float Tax { get; set; }
         public override string ToString()
         {
             return $"Descrição: {Description} Id: {Id} Preço: {Price} Taxa: {Tax}";
