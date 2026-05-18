@@ -8,7 +8,7 @@ namespace Exercicio_Interfaces_OOP
         static void Main(string[] args)
         {
             Console.WriteLine("PRODUTOS");
-            Console.WriteLine("-------------------------------------------------");
+            Console.WriteLine("-----------------------------------------------");
 
             Product product1 = new FixedPriceProduct()
             {
