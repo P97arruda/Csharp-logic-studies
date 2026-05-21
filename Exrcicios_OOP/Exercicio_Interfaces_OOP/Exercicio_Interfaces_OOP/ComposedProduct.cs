@@ -25,7 +25,13 @@ namespace Exercicio_Interfaces_OOP
 
         public override string ToString() 
         {
-            return $"Produto Composto: {base.ToString()}  Desconto: {Discount:P0}  Total: {ValueToPay():C2}";
+            string result = $"Produto Composto: Descrição: {Description} Id: {Id} Desconto: {Discount:P0}\n";
+            foreach (Product produt in Products) 
+            {
+                result = result + " - " + produt + "\n";
+            }
+            result = result + "Total: " + ValueToPay().ToString("F2");
+            return result;
         }
     }
 }

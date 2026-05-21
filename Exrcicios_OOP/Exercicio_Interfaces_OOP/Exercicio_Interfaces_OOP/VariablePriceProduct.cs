@@ -14,7 +14,7 @@ namespace Exercicio_Interfaces_OOP
 
         public override string ToString()
         {
-            return $"Produto Variável -> {base.ToString()} | {Measurement}: {Quantity} | Total: {ValueToPay():C2}";
+            return $"Produto Variável -> {base.ToString()} | {Measurement}: {Quantity} | Total: {ValueToPay():F2}";
         }
         
         public override double ValueToPay()

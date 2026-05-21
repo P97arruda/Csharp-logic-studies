@@ -12,7 +12,7 @@
 
         public override string ToString()
         {
-            return $"Produto Fixo: {base.ToString()} | Total: {ValueToPay():C2}";
+            return $"Produto Fixo: {base.ToString()} | Total: {ValueToPay():F2}";
         }
 
         public override double ValueToPay()

@@ -28,7 +28,8 @@
 
         public override string ToString()
         {
-            return $"Fatura Total: {ValueToPay()}";
+            return $"Fatura Total: {ValueToPay().ToString("F2")}";
+
         }
     }
 }
