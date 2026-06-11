@@ -139,7 +139,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 677);
+            this.ClientSize = new System.Drawing.Size(573, 666);
             this.Controls.Add(this.comboBoxDepat);
             this.Controls.Add(this.btnALterar);
             this.Controls.Add(this.btnRemover);
