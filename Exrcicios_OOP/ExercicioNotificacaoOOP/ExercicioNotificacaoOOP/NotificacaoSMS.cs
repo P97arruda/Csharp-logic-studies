@@ -4,8 +4,7 @@ using System.Text;
 
 namespace ExercicioNotificacaoOOP
 {
-    internal interface INotificacao
+    internal class NotificacaoSMS
     {
-       string EnviarMensagem(string destinatario, string mensagem);
     }
 }
