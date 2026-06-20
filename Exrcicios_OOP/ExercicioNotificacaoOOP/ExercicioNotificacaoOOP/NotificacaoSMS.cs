@@ -4,7 +4,11 @@ using System.Text;
 
 namespace ExercicioNotificacaoOOP
 {
-    internal class NotificacaoSMS
+    internal class NotificacaoSMS : INotificacao
     {
+        public void EnviarMensagem(string destinatario, string mensagem)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

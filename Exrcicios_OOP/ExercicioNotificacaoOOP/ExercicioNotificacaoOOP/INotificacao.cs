@@ -6,6 +6,6 @@ namespace ExercicioNotificacaoOOP
 {
     internal interface INotificacao
     {
-       string EnviarMensagem(string destinatario, string mensagem);
+       void EnviarMensagem(string destinatario, string mensagem);
     }
 }

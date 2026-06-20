@@ -130,5 +130,19 @@ namespace Exercicio_Linq
             CarregaLista();
             AtualizaId();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormDerpatamentos formdepartamento = new FormDerpatamentos();
+            formdepartamento.ShowDialog();
+
+            // recarrega o comboBox depois de fechar o FormDepartamentos
+            comboBoxDepat.Items.Clear();
+            var listaDept = from Departamento in dc.Departamentos select Departamento;
+            foreach (Departamento d in listaDept)
+            {
+                comboBoxDepat.Items.Add(d.Sigla);
+            }
+        }
     }
 }

@@ -4,7 +4,19 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            List<INotificacao> canais = new List<INotificacao>
+            {
+                new NotificacaoEmail(),
+                new NotificacaoSMS(),
+                new NotificacaoPush()
+            };
+
+
+            foreach (var notificacao in canais)
+            {
+                Console.WriteLine(notificacao);
+            }
         }
     }
+    
 }

@@ -6,9 +6,14 @@ namespace ExercicioNotificacaoOOP
 {
     internal class NotificacaoPush : INotificacao
     {
-        public string EnviarMensagem(string destinatario, string mensagem)
+        public void EnviarMensagem(string destinatario, string mensagem)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"[EMAIL] Para: {destinatario} | Mensagem: {mensagem}");
+        }
+
+        public override string ToString()
+        {
+            return $"";
         }
     }
 }

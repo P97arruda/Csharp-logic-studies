@@ -40,9 +40,10 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(344, 257);
+            this.btnCancelar.Location = new System.Drawing.Point(459, 316);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(100, 28);
             this.btnCancelar.TabIndex = 0;
             this.btnCancelar.Text = "Cancelar ";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -50,9 +51,10 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(425, 257);
+            this.btnGuardar.Location = new System.Drawing.Point(567, 316);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.Size = new System.Drawing.Size(100, 28);
             this.btnGuardar.TabIndex = 1;
             this.btnGuardar.Text = "guardar ";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -62,34 +64,38 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(283, 76);
+            this.label3.Location = new System.Drawing.Point(377, 94);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(19, 15);
+            this.label3.Size = new System.Drawing.Size(21, 18);
             this.label3.TabIndex = 3;
             this.label3.Text = "Id";
             // 
             // textBoxId
             // 
-            this.textBoxId.Location = new System.Drawing.Point(286, 94);
+            this.textBoxId.Location = new System.Drawing.Point(381, 116);
+            this.textBoxId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.ReadOnly = true;
-            this.textBoxId.Size = new System.Drawing.Size(214, 20);
+            this.textBoxId.Size = new System.Drawing.Size(284, 22);
             this.textBoxId.TabIndex = 6;
             // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(286, 153);
+            this.textBoxNome.Location = new System.Drawing.Point(381, 188);
+            this.textBoxNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxNome.Name = "textBoxNome";
-            this.textBoxNome.Size = new System.Drawing.Size(214, 20);
+            this.textBoxNome.Size = new System.Drawing.Size(284, 22);
             this.textBoxNome.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(283, 135);
+            this.label1.Location = new System.Drawing.Point(377, 166);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 15);
+            this.label1.Size = new System.Drawing.Size(53, 18);
             this.label1.TabIndex = 10;
             this.label1.Text = "Nome";
             // 
@@ -97,25 +103,27 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(283, 198);
+            this.label2.Location = new System.Drawing.Point(377, 244);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 15);
+            this.label2.Size = new System.Drawing.Size(114, 18);
             this.label2.TabIndex = 11;
             this.label2.Text = "Departamento";
             // 
             // comboBoxDepat
             // 
             this.comboBoxDepat.FormattingEnabled = true;
-            this.comboBoxDepat.Location = new System.Drawing.Point(286, 216);
+            this.comboBoxDepat.Location = new System.Drawing.Point(381, 266);
+            this.comboBoxDepat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxDepat.Name = "comboBoxDepat";
-            this.comboBoxDepat.Size = new System.Drawing.Size(214, 21);
+            this.comboBoxDepat.Size = new System.Drawing.Size(284, 24);
             this.comboBoxDepat.TabIndex = 12;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 437);
+            this.ClientSize = new System.Drawing.Size(1013, 538);
             this.Controls.Add(this.comboBoxDepat);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -124,6 +132,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCancelar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
