@@ -30,10 +30,10 @@
         {
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textId = new System.Windows.Forms.TextBox();
+            this.texSigla = new System.Windows.Forms.TextBox();
             this.textBoxDepartamento = new System.Windows.Forms.TextBox();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -56,12 +56,13 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Departamento";
             // 
-            // textId
+            // texSigla
             // 
-            this.textId.Location = new System.Drawing.Point(256, 114);
-            this.textId.Name = "textId";
-            this.textId.Size = new System.Drawing.Size(309, 20);
-            this.textId.TabIndex = 12;
+            this.texSigla.Location = new System.Drawing.Point(256, 114);
+            this.texSigla.Name = "texSigla";
+            this.texSigla.ReadOnly = true;
+            this.texSigla.Size = new System.Drawing.Size(309, 20);
+            this.texSigla.TabIndex = 12;
             // 
             // textBoxDepartamento
             // 
@@ -71,39 +72,42 @@
             this.textBoxDepartamento.Size = new System.Drawing.Size(309, 20);
             this.textBoxDepartamento.TabIndex = 13;
             // 
-            // btnAdd
+            // btnGuardar
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.LightGreen;
-            this.btnAdd.Location = new System.Drawing.Point(488, 231);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(77, 23);
-            this.btnAdd.TabIndex = 14;
-            this.btnAdd.Text = "Gaurdar";
-            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnGuardar.BackColor = System.Drawing.Color.LightGreen;
+            this.btnGuardar.Location = new System.Drawing.Point(488, 231);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(77, 23);
+            this.btnGuardar.TabIndex = 14;
+            this.btnGuardar.Text = "Gaurdar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // button2
+            // btnCancelar
             // 
-            this.button2.BackColor = System.Drawing.Color.Salmon;
-            this.button2.Location = new System.Drawing.Point(405, 231);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(77, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCancelar.BackColor = System.Drawing.Color.Salmon;
+            this.btnCancelar.Location = new System.Drawing.Point(405, 231);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(77, 23);
+            this.btnCancelar.TabIndex = 15;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // FormEditarDepartamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 443);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.textBoxDepartamento);
-            this.Controls.Add(this.textId);
+            this.Controls.Add(this.texSigla);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Name = "FormEditarDepartamento";
             this.Text = "FormEditarDepartamento";
+            this.Load += new System.EventHandler(this.FormEditarDepartamento_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,9 +117,9 @@
 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textId;
+        private System.Windows.Forms.TextBox texSigla;
         private System.Windows.Forms.TextBox textBoxDepartamento;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

@@ -42,7 +42,7 @@
             // textBoxDepartamento
             // 
             this.textBoxDepartamento.Location = new System.Drawing.Point(89, 145);
-            this.textBoxDepartamento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxDepartamento.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDepartamento.Name = "textBoxDepartamento";
             this.textBoxDepartamento.Size = new System.Drawing.Size(309, 20);
             this.textBoxDepartamento.TabIndex = 1;
@@ -111,10 +111,11 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(403, 86);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(218, 173);
             this.listBox1.TabIndex = 12;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // btnApagar
             // 
@@ -125,6 +126,7 @@
             this.btnApagar.TabIndex = 13;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // FormDerpatamentos
             // 
@@ -140,7 +142,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxDepartamento);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormDerpatamentos";
             this.Text = "FormDerpatamentos";
             this.Load += new System.EventHandler(this.FormDerpatamentos_Load);

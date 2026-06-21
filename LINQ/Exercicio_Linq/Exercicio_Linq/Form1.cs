@@ -41,10 +41,12 @@ namespace Exercicio_Linq
         private void CarregaLista()
         {
             listBox1.Items.Clear();
-            var lista = from Funcionario in dc.Funcionarios select Funcionario;
+
+            DataClasses1DataContext dcNovo = new DataClasses1DataContext();
+            var lista = from Funcionario in dcNovo.Funcionarios select Funcionario;
             foreach (Funcionario funcionario in lista)
             {
-                listBox1.Items.Add(funcionario.Id + " - " + funcionario.Nome + " - " + funcionario.Departamento);
+                listBox1.Items.Add(funcionario.Id + " - " + funcionario.Departamento + " - " + funcionario.Nome);
             }
         }
 
@@ -52,11 +54,12 @@ namespace Exercicio_Linq
         {
             if (listBox1.SelectedItem == null)
                 return;
+
             string item = listBox1.SelectedItem.ToString();
             string[] partes = item.Split('-');
             textBoxId.Text = partes[0].Trim();
-            textBoxNome.Text = partes[1].Trim();
-            comboBoxDepat.Text = partes[2].Trim();
+            comboBoxDepat.Text = partes[1].Trim();
+            textBoxNome.Text = partes[2].Trim();
         }
 
         private void btnRemover_Click(object sender, EventArgs e)
